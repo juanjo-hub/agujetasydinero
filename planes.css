@@ -1,0 +1,63 @@
+.div-planes {
+  display: flex;
+  justify-content: center;
+  gap: 0; 
+  background: #111;
+  position: relative;
+  width: 100vw;
+  height: 40vh;
+  overflow: hidden;
+  padding: 1rem;
+  align-items: stretch;
+}
+
+/* --- IMAGEN IZQUIERDA --- */
+.img1-izquierda {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(0 0, 100% 0, 92% 100%, 0 100%);
+  transition: transform 0.3s ease;
+}
+
+/* --- IMAGEN DERECHA --- */
+.img1-derecha {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path:polygon(8% 0, 100% 0, 100% 100%, 0 100%);
+  transition: transform 0.3s ease;
+}
+
+.enlace-amateur, .enlace-pro, .enlace-novato{text-decoration: none; color: #fff; }
+.enlace-amateur:hover, .enlace-pro:hover, .enlace-novato:hover{text-decoration: none; color:#b41271; }
+
+.div-central1, .div-central2, .div-central3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    background: rgb(0 0 0 / 70%);
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+}
+
+.div-central:hover{
+  box-shadow: #fff;
+}
+
+.contenido-central{
+  display: grid;
+  text-align: center;
+}
+
+.contenido-central h2{
+  color: #fff;
+}
+
+.contenido-central p{
+  color: #fff;
+}

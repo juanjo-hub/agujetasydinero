@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agujetas y Dinero</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tienda.css">
+</head>
+<body>
+
+    <header>
+                <div><p>PÁGINA DE PRÁCTICA - NO EXISTE</p></div>
+        <nav>
+            <img src="logo.png" id="logo" alt="Logo de Agujetas y Dinero">
+            <a href="index.html" class="a-nav">Inicio</a>
+            <a href="planes.html" class="a-nav">Planes</a>
+            <a href="tienda.html" class="a-nav">Tienda</a>
+            <a href="sobre-nosotros.html" class="a-nav">Sobre Nosotros</a>
+            <a href="contacto.html" class="a-nav">Contacto</a>
+            <a href="carro.html" id="carrito" class="a-nav">🛒 Carrito<span id="cantidad-carrito">0</span></a>
+            <a href="registro.html" id="membresia">REGISTRO</a>
+        </nav>
+    </header>
+
+<aside class="barra-filtros">
+  <form id="filtrosForm">
+    <div class="filtro">
+      <label for="tipo">Tipo:</label>
+      <select id="tipo" name="tipo">
+        <option value="todos">Todos</option>
+        <option value="nutricion">Nutrición</option>
+        <option value="accesorios">Accesorios</option>
+      </select>
+    </div>
+
+    <div class="filtro">
+    <label for="orden">Ordenar por:</label>
+    <select id="orden" name="orden">
+        <option value="caro">De más caro a más barato</option>
+        <option value="barato">De más barato a más caro</option>
+    </select>
+</div>
+
+    <button type="button" onclick="btnFiltro()">Aplicar</button>
+  </form>
+</aside>
+
+
+    <main>
+    <div class="productos-grid">
+        <div class="producto-nutricion" style="background-image: url('Imagenes/Inicio/creatina.png');">
+            <div class="overlay">
+                <div class="precio">49.99€</div>
+                <div class="descripcion">Creatina 1000cápsulas - Sabor Neutro</div>
+                <div class="carrito-btn">🛒</div>
+            </div>
+        </div>
+
+        <div class="producto-nutricion" style="background-image: url('Imagenes/Inicio/proteina.png');">
+            <div class="overlay">
+                <div class="precio">39.99€</div>
+                <div class="descripcion">Proteina 3kgs - Sabor Neutro</div>
+                <div class="carrito-btn">🛒</div>
+            </div>
+        </div>
+
+        <div class="producto-accesorios" style="background-image: url('Imagenes/Inicio/straps.png');">
+            <div class="overlay">
+                <div class="precio">14.99€</div>
+                <div class="descripcion">STRAPS en 8</div>
+                <div class="carrito-btn">🛒</div>
+            </div>
+        </div>
+                <div class="producto-accesorios" style="background-image: url('Imagenes/Inicio/botella.png');">
+            <div class="overlay">
+                <div class="precio">12.99€</div>
+                <div class="descripcion">Botella Deportiva 1.5L</div>
+                <div class="carrito-btn">🛒</div>
+            </div>
+        </div>
+
+        <div class="producto-accesorios" style="background-image: url('Imagenes/Inicio/toalla.png');">
+            <div class="overlay">
+                <div class="precio">9.99€</div>
+                <div class="descripcion">Toalla Gimnasio</div>
+                <div class="carrito-btn">🛒</div>
+            </div>
+        </div>
+
+        <div class="producto-accesorios" style="background-image: url('Imagenes/Inicio/esterilla.png');">
+            <div class="overlay">
+                <div class="precio">19.99€</div>
+                <div class="descripcion">Esterilla</div>
+                <div class="carrito-btn">🛒</div>
+            </div>
+        </div>
+        <div class="producto-accesorios" style="background-image: url('Imagenes/Inicio/vendas.png');">
+            <div class="overlay">
+                <div class="precio">14.99€</div>
+                <div class="descripcion">Vendas Boxeo</div>
+                <div class="carrito-btn">🛒</div>
+            </div>
+        </div>
+        <div class="producto-accesorios" style="background-image: url('Imagenes/Inicio/mochila.png');">
+            <div class="overlay">
+                <div class="precio">29.99€</div>
+                <div class="descripcion">Mochila 30L</div>
+                <div class="carrito-btn">🛒</div>
+            </div>
+        </div>
+        <div class="producto-nutricion" style="background-image: url('Imagenes/Inicio/barrita.png');">
+            <div class="overlay">
+                <div class="precio">3.99€</div>
+                <div class="descripcion">Barrita de chocolate 1ud.</div>
+                <div class="carrito-btn">🛒</div>
+            </div>
+        </div>
+        <div class="producto-accesorios" style="background-image: url('Imagenes/Inicio/guantes.png');">
+            <div class="overlay">
+                <div class="precio">19.99€</div>
+                <div class="descripcion">Guantes</div>
+                <div class="carrito-btn">🛒</div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="JavaScripts/script.js"></script>
+
+
+    <footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <a href="#logo"><img src="logo.png" alt="Logo Agujetas y Dinero" class="footer-logo"></a>
+            <p>© 2025 Agujetas y Dinero<br>
+            Entrena fuerte, gasta menos.<br>
+            Todos los derechos reservados.</p>
+        </div>
+
+        <div class="footer-right">
+            <div class="footer-col">
+                <h3>Explora</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="planes.html">Planes</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="unete.html">Registro</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                    <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="politica-cookies.html">Política de Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

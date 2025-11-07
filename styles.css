@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap');
+html{
+    font-family: "BBH Sans Bogle", sans-serif;
+    width: 100vw;
+    background: #000;
+    overflow-x: hidden;
+}
+
+header{
+    background: #c0c0c0;   
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: -1px;
+}
+
+#logo{
+    width: 120px;
+    height: 100px;
+}
+
+#membresia{
+    border: 1px solid #fff;
+    padding: 0.8rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+#membresia:hover{
+    color: #000;
+    background: #fff;
+}
+
+nav {
+    display: flex;              
+    align-items: center;        
+    justify-content: space-evenly; 
+    background-color: #000;
+}
+
+nav .a-nav {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 0.5rem;           
+    font-weight: 500;
+    padding: 0.5rem;
+}
+
+nav .a-nav:hover {
+    background: #fff;
+    color: #000;
+}
+
+main{ padding-top: 80px;}
+/*DIV1*/
+.div1 {
+    position: relative;
+    height: 50vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    overflow: hidden;
+}
+
+/* Video de fondo */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Se comporta como background-size: cover */
+    z-index: -1; /* Lo coloca detrás del contenido */
+}
+
+/* Texto */
+.h2-div1 {
+    color: white;
+    font-size: 3rem;
+    z-index: 1;
+}
+
+/* Botón */
+.btn-div {
+    margin:3rem 0;
+    padding: 0.8rem 2rem;
+    background: #000;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s;
+}
+
+.btn-div:hover {
+    color: #000;
+    background: #fff;
+}
+
+.btn-pause {
+  background: rgb(255, 255, 255, 0.1);
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  border: none;
+  padding: 0rem;
+  margin: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  z-index: 10; 
+}
+
+.btn-pause:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/*DIV2*/
+.div2 {
+  color: white;
+  background: #000;
+  text-align: center;
+  margin: 2rem 1rem 3rem 1rem;
+  padding: 20px;
+}
+
+.div2 h2 {
+  font-size: 4rem;
+  letter-spacing: 2px;
+  margin-bottom: 3rem;
+}
+
+.dentro-div2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.plan {
+    background: #222;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 1rem;
+    gap: 1rem;
+    margin: 0.5rem;
+}
+
+.plan .image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+  /* Inclinar imagen */
+  transform: rotate(-7deg);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.7);
+  border-radius: 5px;
+}
+
+.plan .image:hover{
+    transform: rotate(0);
+}
+
+.plan-noob .image {
+  background-image: url('Imagenes/Inicio/noob.jpg');
+}
+
+.plan-pro .image {
+  background-image: url('Imagenes/Inicio/amateur.png');
+}
+
+.plan-zeus .image {
+  background-image: url('Imagenes/Inicio/pro.jpg');
+}
+
+.caption {
+  font-weight: bold;
+  background: #ddd;
+  color: black;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 8px 0;
+  border-radius: 3px;
+  user-select: none;
+}
+
+.sabermas > a{
+  text-decoration:none;
+  color: #b6b09f;
+}
+
+.sabermas {
+  font-size: 1.1rem;
+  opacity: 0.6;
+  margin-top: 10px;
+  user-select: none;
+  padding: 1rem;
+}
+
+.sabermas:hover{
+  font-style: italic;
+  transform: rotate(-2deg);
+  box-shadow: 0 4px 8px rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+/*DIV3*/
+.div3{
+    background-image: url("Imagenes/Inicio/div3-img.png");
+    background-size: cover;       
+    background-position: center; 
+    background-attachment: fixed; /* Esto activa el parallax */
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+    padding-bottom: 3rem;  
+    text-align: center;
+}
+
+#h2-div3{
+    font-size: 2rem;
+    padding: 2rem;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
+/*DIV4*/
+.div4 {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  text-align: center;
+  gap: 20px;
+  padding: 2rem;
+}
+
+.div4 article {
+  display: inline-block;
+  margin: 10px;
+}
+
+.div4 {
+  flex-wrap: wrap;
+}
+h2#h2-div4{
+  color: #fff;
+  font-size: 2rem;
+  padding: 2rem;
+  letter-spacing: 2px;
+}
+
+.producto-img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  border: 3px solid #fff;
+  border-radius: 120px;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.producto-img:hover{
+    transform: scale(1.1);
+}
+
+.btn-div {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.btn-div:hover{
+    background: #b6b09f;
+}
+
+/*DIV5*/
+.div5 {
+  margin: 1rem auto;
+  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('Imagenes/Inicio/fondo-preguntas.jpg');
+  background-size: cover;   
+  background-position: center; 
+  background-repeat: no-repeat;  
+}
+.div5 h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  color: #000000;
+}
+
+.pregunta {
+  border-bottom: 1px solid #000000;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.btn-pregunta {
+  background: rgba(255, 255, 255, 0.7); 
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #000000;
+  padding: 15px 10px;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-pregunta:hover {
+  color: #000000;
+  background: #b6b09f;
+}
+
+.respuesta {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  color: #000000;
+  background: rgba(255, 255, 255, 0.7); 
+  padding: 0 1rem;
+}
+
+.pregunta.activa .respuesta {
+  max-height: 300px; 
+  padding: 10px;
+}
+
+.btn-pregunta::after {
+  content: '+';
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.pregunta.activa .btn-pregunta::after {
+  content: '−';
+}
+
+/*FOOTER*/
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 0;
+    display: block;
+    margin-top: 1rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.footer-left {
+    flex: 1;
+    width: 300px;
+    justify-content: center;
+    padding-left: 5rem;
+}
+
+.footer-logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.footer-logo:hover{
+    width: 120px;
+}
+
+.footer-left p {
+    line-height: 2;
+    color: #ccc;
+}
+
+.footer-right {
+    display: flex;
+    gap: 2rem;
+    flex: 2;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 50%;
+}
+
+.footer-col h3 {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 1rem;
+}
+
+.footer-col ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+    font-style: italic;
+}

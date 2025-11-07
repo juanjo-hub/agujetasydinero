@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agujetas y Dinero</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+
+    <header>
+                <div><p>PÁGINA DE PRÁCTICA - NO EXISTE</p></div>
+        <nav>
+            <img src="logo.png" id="logo" alt="Logo de Agujetas y Dinero">
+            <a href="index.html" class="a-nav">Inicio</a>
+            <a href="planes.html" class="a-nav">Planes</a>
+            <a href="tienda.html" class="a-nav">Tienda</a>
+            <a href="sobre-nosotros.html" class="a-nav">Sobre Nosotros</a>
+            <a href="contacto.html" class="a-nav">Contacto</a>
+            <a href="carro.html" id="carrito" class="a-nav">🛒 Carrito</a>
+            <a href="registro.html" id="membresia">REGISTRO</a>
+        </nav>
+    </header>
+
+ <main>
+        <section class="div-maps">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5145.832928606155!2d-3.886856153531196!3d37.87461980781377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd2f5a082942f%3A0x68ca6f18ed4b9f86!2s23180%20Fuerte%20del%20Rey%2C%20Ja%C3%A9n!5e0!3m2!1ses!2ses!4v1762431906959!5m2!1ses!2ses" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Ubicación de Agujetas y Dinero">
+            </iframe>
+        </section>
+
+        <section class="div-info">
+            <h2>Contacto</h2>
+            <ul>
+                <li><i class="fa-solid fa-phone"></i> 926 12 34 56</li>
+                <li><i class="fa-solid fa-map-marker-alt"></i> Calle la Pantomima, nº0, Fuerte del Rey</li>
+                <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@agujetasydinero.es">info@agujetasydinero.es</a></li>
+                <li><i class="fa-solid fa-clock"></i> Horario: 6:00 a 22:00 durante todo el año</li>
+            </ul>
+        </section>
+
+  </main>
+
+    <form action="enviar-formulario.php" method="post" class="form-contacto">
+    <div class="form-group">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+    </div>
+
+    <div class="form-group">
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+    </div>
+
+    <div class="form-group">
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ej: 612345678" pattern="[0-9]{9}" required>
+    </div>
+
+    <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+    </div>
+
+    <div class="form-group checkbox">
+        <input type="checkbox" id="privacidad" name="privacidad" required>
+        <label for="privacidad">
+            Acepto los términos de la <a href="politica-privacidad.html" target="_blank">Política de Privacidad</a>
+        </label>
+    </div>
+
+    <button type="submit" class="btn-enviar">Enviar</button>
+</form>
+
+
+  
+
+
+    <footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <a href="#logo"><img src="logo.png" alt="Logo Agujetas y Dinero" class="footer-logo"></a>
+            <p>© 2025 Agujetas y Dinero<br>
+            Entrena fuerte, gasta menos.<br>
+            Todos los derechos reservados.</p>
+        </div>
+
+        <div class="footer-right">
+            <div class="footer-col">
+                <h3>Explora</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="planes.html">Planes</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="unete.html">Registro</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                    <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="politica-cookies.html">Política de Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

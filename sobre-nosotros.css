@@ -1,0 +1,56 @@
+#titular{text-align: center; height: 30vh;}
+h1{
+    font-size: 3rem;
+    color: #fff;
+    background: #000;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.art-mision, .art-valores, .art-vision{
+    width: 100%;
+    background-attachment: fixed; /* Efecto parallax */
+}
+
+.art-mision{
+    background-image: url('Imagenes/Sobre-nosotros/imagen2-sobrenosotros.jpg');
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px; 
+    text-align: center;
+    height: 50vh;
+}
+
+.art-vision{
+    background-image: url('Imagenes/Sobre-nosotros/imagen1-sobrenosotros.jpg');
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    color: #fff;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px; 
+    text-align: center;
+    height: 50vh;
+}
+
+.art-valores{
+    background-image: url('Imagenes/Sobre-nosotros/imagen3-sobrenosotros.jpg');
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;    
+    color: #000;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px; 
+    text-align: center;
+    height: 50vh;
+}
+
+.h2-sobrenosotros{
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
