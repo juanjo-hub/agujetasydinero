@@ -2,147 +2,132 @@
 body{
      background: url('Imagenes/Contacto/fondo-contacto.png') no-repeat center center / cover fixed;
 }
-main {
-    display: grid;
-    grid-template-columns: 40% 40%;
-    gap: 2rem;
-    padding: 2rem;
-    margin-top: 5rem;
-    width: 100%;
-    align-items: center;
+/* ===== Ajuste del contenedor principal ===== */
+main{
+  /* De 40% 40% a dos columnas iguales centradas */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  /* centrado y ancho consistente */
+  width: min(1200px, 92vw);
+  margin: 6rem auto 2rem;   /* baja bajo el header fijo y centra */
+  padding: 2rem;
+  align-items: start;
 }
 
-/* Info */
-.div-info {
-    background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    display: flex;
-    flex-direction: column;
-    opacity: 0.8;
-    line-height: 2rem;
+/* Mapa e info con caja consistente */
+.div-maps{
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.08);
+  background: #000;
+}
+.div-maps iframe{
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+  border: 0;
+  display: block;
+}
+.div-info{
+  background: rgba(0,0,0,.55);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  color: #fff;
 }
 
-i{
-    margin: 1rem;
+/* ===== El formulario: mismo ancho visual y layout en 2 columnas ===== */
+.form-contacto{
+  /* mismo ancho y centrado que main */
+  width: min(1200px, 92vw);
+  margin: 0 auto 3rem;
+
+  /* caja */
+  background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 12px;
+  padding: clamp(1rem, 3vw, 1.5rem);
+
+  /* reflow de campos sin tocar HTML */
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));  /* 2 columnas */
+  gap: 1rem 1.25rem;
+
+  /* anula posibles límites estrechos previos */
+  max-width: none;
+  background: #000;
 }
 
-.div-info ul li a{ text-decoration: none; color: #000;}
-.div-info ul li a:hover{ font-weight: 900; }
-
-.div-info ul {
-    list-style: none; 
-    padding-left: 0;  
-    margin: 0;
+.form-contacto .form-group{
+  display: grid;
+  gap: .35rem;
 }
 
-.div-info ul li {
-    list-style: none;
-    display: flex;         
-    align-items: center;
-    gap: 8px;               /* Espacio entre ícono y texto */
-    justify-content: flex-start; /* Alinea todo a la izquierda */
-}
-
-/* Mapa */
-.div-maps {
-    border-radius: 8px;
-    overflow: hidden; 
-}
-
-.div-maps iframe {
-    width: 100%;
-    height: 100%;
-    min-height: 450px;
-    display: block;
+/* Mensaje, checkbox y botón a ancho completo */
+.form-contacto .form-group:nth-of-type(4){ grid-column: 1 / -1; }  /* Mensaje */
+.form-contacto .checkbox{ grid-column: 1 / -1; }
+.form-contacto .btn-enviar{
+  grid-column: 1 / -1;
+  justify-self: start;
 }
 
 
-/* ==== FORMULARIO DE CONTACTO ==== */
-.form-contacto {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    background: #fff;
+/* Inputs/textarea con estados limpios (respetando tus clases) */
+.form-contacto label{ color: #cbd5e1; line-height: 2px; margin-bottom: 1rem;}
+.form-contacto input,
+.form-contacto textarea{
+  padding: .8rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,.15);
+  background: rgba(255,255,255,.06);
+  color: #fff;
+  outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
+}
+.form-contacto input::placeholder,
+.form-contacto textarea::placeholder{ color: #9aa4b2; }
+.form-contacto input:focus,
+.form-contacto textarea:focus{
+  border-color: #b41271;
+  box-shadow: 0 0 0 3px rgba(180,18,113,.25);
+  background: rgba(255,255,255,.08);
 }
 
-.form-contacto h2 {
-    text-align: center;
-    color: #222;
-    margin-bottom: 20px;
+/* Botón (tu clase) */
+.btn-enviar{
+  background: #b41271;
+  color: #fff;
+  font-weight: 800;
+  border: 1px solid #b41271;
+  padding: .9rem 1.2rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.btn-enviar:hover{ filter: brightness(1.05); }
+
+
+/* Alinear el checkbox e texto en una fila */
+.form-contacto .checkbox{
+  grid-column: 1 / -1;       /* ya lo tienes, lo dejo por claridad */
+  display: flex !important;  /* anula el display:grid heredado */
+  align-items: center;       /* centra verticalmente */
+  gap: .6rem;                /* hueco entre check y texto */
+  justify-self: start;       /* evita que se centre el bloque */
 }
 
-.form-group {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
+.form-contacto .checkbox input[type="checkbox"]{
+  margin: 0;                 /* sin margen extraño */
+  inline-size: 1.1rem;       /* tamaño del check */
+  block-size: 1.1rem;
+  accent-color: #b41271;     /* color corporativo del check */
 }
 
-.form-group label {
-    margin-bottom: 8px;
-    font-weight: 600;
-    color: #000000;    
+.form-contacto .checkbox label{
+  margin: 0;
+  line-height: 1.35;
 }
 
-.form-group input,
-.form-group textarea {
-    padding: 10px 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-}
 
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #00b894;
-    box-shadow: 0 0 5px rgba(0, 184, 148, 0.3);
-    outline: none;
-}
-
-.form-group textarea {
-    resize: vertical;
-}
-
-/* ==== CHECKBOX ==== */
-.form-group.checkbox {
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-}
-
-.form-group.checkbox label {
-    margin: 0;
-    font-size: 0.95rem;
-}
-
-.form-group.checkbox a {
-    color: #b41271;
-    text-decoration: none;
-}
-
-.form-group.checkbox a:hover {
-    text-decoration: underline;
-}
-
-/* ==== BOTÓN ==== */
-.btn-enviar {
-    display: block;
-    width: 15%;
-    background: #b41271;
-    color: #fff;
-    font-weight: bold;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-.btn-enviar:hover {
-    background: #000000;
-    color: #b41271;
-}
+.enlace-privacidad{color: #b41271;}
