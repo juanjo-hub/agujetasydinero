@@ -1,10 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap');
-html{
+html, body{
     font-family: "BBH Sans Bogle", sans-serif;
     width: 100vw;
     background: #000;
     overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+  }
+
+/* Contenedor */
+#aviso-header{
+  padding: 2px;
+  margin: 0;
+  font-size: .8rem;
+  background: #b41271;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
 }
+
+.ticker-group span {margin:0 1rem}
 
 header{
     background: #c0c0c0;   
