@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Carrito - Agujetas y Dinero</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carro.css">
+    <link rel="stylesheet" href="tienda.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" id="logo" alt="Logo de Agujetas y Dinero">
+            <a href="index.html" class="a-nav">Inicio</a>
+            <a href="planes.html" class="a-nav">Planes</a>
+            <a href="tienda.html" class="a-nav">Tienda</a>
+            <a href="sobre-nosotros.html" class="a-nav">Sobre Nosotros</a>
+            <a href="contacto.html" class="a-nav">Contacto</a>
+            <a href="carro.html" id="carrito" class="a-nav">🛒 Carrito<span id="cantidad-carrito">0</span></a>
+            <a href="registro.html" id="membresia">REGISTRO</a>
+        </nav>
+    </header>
+
+  <main>
+        <div id="contenido-carrito">
+            <h2>Tu Carrito</h2>
+            <div id="productos-carrito"></div>
+            <div id="mensaje-carrito" style="display: none;">Tu carrito está vacío</div>
+            <div id="precio-total">Total: €0.00</div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <a href="#logo"><img src="logo.png" alt="Logo Agujetas y Dinero" class="footer-logo"></a>
+                <p>© 2025 Agujetas y Dinero<br>
+                Entrena fuerte, gasta menos.<br>
+                Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-col">
+                    <h3>Explora</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="planes.html">Planes</a></li>
+                        <li><a href="tienda.html">Tienda</a></li>
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="unete.html">Registro</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                        <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="politica-cookies.html">Política de Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="JavaScripts/script.js"></script>
+</body>
+</html>

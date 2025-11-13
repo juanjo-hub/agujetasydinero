@@ -99,9 +99,9 @@ main{ padding-top: 80px;}
 }
 
 /* Botón */
-.btn-div {
+.btn-div , .btn-div-h1 {
     margin:3rem 0;
-    padding: 0.8rem 2rem;
+    padding: 1rem 2rem;
     background: #000;
     color: white;
     border: 2px solid white;
@@ -112,30 +112,45 @@ main{ padding-top: 80px;}
     transition: background-color 0.3s;
 }
 
-.btn-div:hover {
-    color: #000;
-    background: #fff;
+.btn-div:hover, .btn-div-h1:hover {
+    color: #b41271;
+    background: #000000;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5); 
 }
 
 .btn-pause {
-  background: rgb(255, 255, 255, 0.1);
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  border: none;
-  padding: 0rem;
-  margin: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1.2rem;
-  z-index: 10; 
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    border: none;
+    padding: 0rem;
+    margin: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 10;
+    color: #fff;
+    background: none;
 }
 
 .btn-pause:hover {
-  background: rgba(0, 0, 0, 0.1);
+  color: #b41271;
 }
 
-/*DIV2*/
+.div1_5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* empuja contenido arriba y botón abajo */
+  align-items: center;            /* centra horizontalmente el botón */
+  background: #fff;
+  color: #000;
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+  padding: 5rem;
+  height: 400px;
+}
+
+.div1_5 > h1{ color: #000; font-size: 4.2rem; text-align: center;padding-top: 2rem; margin: 0;}
+
 .div2 {
   color: white;
   background: #000;
@@ -185,15 +200,15 @@ main{ padding-top: 80px;}
 }
 
 .plan-noob .image {
-  background-image: url('Imagenes/Inicio/noob.jpg');
+  background-image: url('Imagenes/Inicio/noob.webp');
 }
 
 .plan-pro .image {
-  background-image: url('Imagenes/Inicio/amateur.png');
+  background-image: url('Imagenes/Inicio/amateur.webp');
 }
 
 .plan-zeus .image {
-  background-image: url('Imagenes/Inicio/pro.jpg');
+  background-image: url('Imagenes/Inicio/pro.webp');
 }
 
 .caption {
@@ -202,7 +217,8 @@ main{ padding-top: 80px;}
   color: black;
   width: 100%;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
   padding: 8px 0;
   border-radius: 3px;
   user-select: none;
@@ -230,7 +246,7 @@ main{ padding-top: 80px;}
 
 /*DIV3*/
 .div3{
-    background-image: url("Imagenes/Inicio/div3-img.png");
+    background-image: url("Imagenes/Inicio/div3-img.webp");
     background-size: cover;       
     background-position: center; 
     background-attachment: fixed; /* Esto activa el parallax */
@@ -291,7 +307,9 @@ h2#h2-div4{
     border-radius: 10px;
 }
 .btn-div:hover{
-    background: #b6b09f;
+    background: #ffffff;
+    border: 2px solid #000000;
+    color: #b41271;
 }
 
 /*DIV5*/
@@ -299,10 +317,7 @@ h2#h2-div4{
   margin: 1rem auto;
   padding: 1rem;
   font-family: 'Poppins', sans-serif;
-  background-image: url('Imagenes/Inicio/fondo-preguntas.jpg');
-  background-size: cover;   
-  background-position: center; 
-  background-repeat: no-repeat;  
+  background: #fff;
 }
 .div5 h2 {
   text-align: center;
@@ -335,7 +350,7 @@ h2#h2-div4{
 
 .btn-pregunta:hover {
   color: #000000;
-  background: #b6b09f;
+  background: #d4d3cf;
 }
 
 .respuesta {
@@ -435,3 +450,26 @@ footer {
     color: #fff;
     font-style: italic;
 }
+
+.correo{
+  text-decoration: none;
+  color: #b41271;
+}
+
+
+.footer-social {
+  margin: 10px 0;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: #e1306c; /* color típico Instagram o TikTok */
+}
+

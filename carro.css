@@ -1,0 +1,32 @@
+/* Estilos para los botones de cantidad */
+.btn-cantidad {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #f0f0f0;
+    margin: 5px;
+}
+
+.btn-cantidad:hover {
+    background-color: #e0e0e0;
+}
+
+.producto-en-carrito {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+.producto-en-carrito .descripcion {
+    font-weight: bold;
+}
+
+.producto-en-carrito .precio {
+    color: #333;
+}
+
+.producto-en-carrito .acciones {
+    margin-top: 10px;
+}

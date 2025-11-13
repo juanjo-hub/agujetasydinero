@@ -17,7 +17,7 @@
             <a href="tienda.html" class="a-nav">Tienda</a>
             <a href="sobre-nosotros.html" class="a-nav">Sobre Nosotros</a>
             <a href="contacto.html" class="a-nav">Contacto</a>
-            <a href="carro.html" id="carrito" class="a-nav">🛒 Carrito</a>
+            <a href="carro.html" id="carrito" class="a-nav">🛒 Carrito<span id="cantidad-carrito">0</span></a>
             <a href="registro.html" id="membresia">REGISTRO</a>
         </nav>
     </header>
@@ -25,7 +25,7 @@
     <main>
 
     <section id="plan">
-        <div class="container">
+        <div class="container1">
             <h2>Plan Novato</h2>
             <p>Diseñado especialmente para quienes están empezando en el gimnasio. Con este plan solo podrás acceder a nuestras clases guiadas. No incluye musculación ni áreas al aire libre.</p>
             <ul>
@@ -35,6 +35,28 @@
                 <li>Precio: 29,99€ / mes</li>
             </ul>
             <a href="registro.html" class="btn">Únete Ahora</a>
+        </div>
+
+<div class="carrusel">
+  <!-- Imágenes -->
+  <div class="slides">
+    <div class="slide"><img src="Imagenes/Planes/amateur1-img.webp" alt="Imagen 1"></div>
+    <div class="slide"><img src="Imagenes/Planes/amateur2-img.webp" alt="Imagen 2"></div>
+    <div class="slide"><img src="Imagenes/Planes/noob1-img.webp" alt="Imagen 3"></div>
+  </div>
+
+  <!-- Botones -->
+  <button id="prev">⟨</button>
+  <button id="next">⟩</button>
+</div>
+    </section>
+
+    <section>
+        <div>
+            <h3>¿Tienes alguna duda?</h3>
+             <!-- Aquí icono SVG -->
+            <p>Tienes un formulario a tu disposición, teléfono de contacto y correo. Contacta sin compromiso.</p>
+            <button></button>
         </div>
     </section>
 
@@ -71,6 +93,8 @@
         </div>
     </div>
 </footer>
+
+ <script src="JavaScripts/script.js"></script>
 
 </body>
 </html>

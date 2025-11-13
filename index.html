@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agujetas y Dinero</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
 
@@ -34,7 +36,7 @@
             <a href="tienda.html" class="a-nav">Tienda</a>
             <a href="sobre-nosotros.html" class="a-nav">Sobre Nosotros</a>
             <a href="contacto.html" class="a-nav">Contacto</a>
-            <a href="carro.html" id="carrito" class="a-nav">🛒 Carrito</a>
+            <a href="carro.html" id="carrito" class="a-nav">🛒 Carrito<span id="cantidad-carrito">0</span></a>
             <a href="registro.html" id="membresia">REGISTRO</a>
         </nav>
     </header>
@@ -45,13 +47,15 @@
             <source src="video-inicio.mp4" type="video/mp4">
             Tu navegador no soporta video en HTML5.
             </video>
-
-            <h2 class="h2-div1">NO PONGAS LÍMITES.<br>PON A PRUEBA TU CUERPO,<br>Y TU ECONOMÍA.</h2>
-            <button type="submit" class="btn-div">ÚNETE</button>
-
-            <button id="pauseButton" class="btn-pause">⏸️</button>
+            <button id="pauseButton" class="btn-pause">⏸</button>
         </div>
 
+        <div class="div1_5">
+            <h1 class="titulo">NO PONGAS LÍMITES.<br>PON A PRUEBA TU CUERPO,<br>Y TU ECONOMÍA.</h1>
+                <button type="button" class="btn-div-h1" onclick="window.location.href='/agujetasydinero-main/contacto.html'">ÚNETE
+                </button>
+    
+        </div>
 
         <div class="div2">
             <h2>EMPIEZA AHORA</h2>
@@ -83,10 +87,10 @@
             <h2 id="h2-div4">PRODUCTOS TOP VENTAS DEL MES</h2>
   
             <div class="productos-grid">
-                <article><a href="#"><img src="Imagenes/Inicio/straps.png" class="producto-img" alt="Straps"></a></article>
-                <article><a href="#"><img src="Imagenes/Inicio/creatina.png" class="producto-img"alt="Creatina"></a></article>
-                <article><a href="#"><img src="Imagenes/Inicio/proteina.png" class="producto-img" alt="Proteína"></a></article>
-                <article><a href="#"><img src="Imagenes/Inicio/botella.png" class="producto-img" alt="Botella"></a></article>
+                <article><a href="#"><img src="Imagenes/Inicio/straps.webp" class="producto-img" alt="Straps"></a></article>
+                <article><a href="#"><img src="Imagenes/Inicio/creatina.webp" class="producto-img"alt="Creatina"></a></article>
+                <article><a href="#"><img src="Imagenes/Inicio/proteina.webp" class="producto-img" alt="Proteína"></a></article>
+                <article><a href="#"><img src="Imagenes/Inicio/botella.webp" class="producto-img" alt="Botella"></a></article>
             </div>
 
             <button type="submit" class="btn-div">Más productos disponibles</button>
@@ -127,8 +131,18 @@
     <footer>
     <div class="footer-container">
         <!-- Columna izquierda -->
-        <div class="footer-left">
-           <a href="#logo"><img src="logo.png" alt="Logo Agujetas y Dinero" class="footer-logo"></a>
+<div class="footer-left">
+  <a href="#logo"><img src="logo.png" alt="Logo Agujetas y Dinero" class="footer-logo"></a>
+  <div class="footer-social">
+    <a href="#" target="_blank" rel="noopener" class="social-icon">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="#" target="_blank" rel="noopener" class="social-icon">
+      <i class="fab fa-tiktok"></i>
+    </a>
+  </div>
+  <p>Correo: <a href="mailto:info@agujetasydinero.com" class="correo">info@agujetasydinero.es</a></p>
+  <p>Teléfono: +34 926 666 666</p>
             <p>© 2025 Agujetas y Dinero<br>
             Entrena fuerte, gasta menos.<br>
             Todos los derechos reservados.</p>

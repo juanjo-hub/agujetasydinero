@@ -13,22 +13,6 @@ h1{
 }
 
 .art-mision{
-    background-image: url('Imagenes/Sobre-nosotros/imagen2-sobrenosotros.jpg');
-    background-size: cover;       
-    background-position: center;  
-    background-repeat: no-repeat;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px; 
-    text-align: center;
-    height: 50vh;
-}
-
-.art-vision{
-    background-image: url('Imagenes/Sobre-nosotros/imagen1-sobrenosotros.jpg');
-    background-size: cover;       
-    background-position: center;  
-    background-repeat: no-repeat; 
     color: #fff;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -37,12 +21,17 @@ h1{
     height: 50vh;
 }
 
-.art-valores{
-    background-image: url('Imagenes/Sobre-nosotros/imagen3-sobrenosotros.jpg');
-    background-size: cover;       
-    background-position: center;  
-    background-repeat: no-repeat;    
-    color: #000;
+.art-vision{
+    color: #fff;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px; 
+    text-align: center;
+    height: 50vh;
+}
+
+.art-valores{   
+    color: #ffffff;
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 20px; 
