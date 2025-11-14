@@ -1,67 +1,96 @@
-
-/*
-URL: PLANES
-*/
 .div-planes {
   display: flex;
   justify-content: center;
-  gap: 0; 
+  align-items: stretch;
+  gap: 0;
   background: #111;
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 40vh;
   overflow: hidden;
-  padding: 1rem;
-  align-items: stretch;
+  padding: 0;                     /* eliminado el padding que rompía el ancho */
+  margin-block: 1rem;             /* separación entre bloques */
+  box-sizing: border-box;
+  --corte: 8%;     
+   padding: 0;
+  margin-block: 2rem;                 /* más aire entre secciones */
+  box-sizing: border-box;     
+    --corte: clamp(64px, 7vw, 120px);          /* variable para mantener cortes iguales */
+}
+
+/* Cada contenedor de imagen */
+.img-div {
+  flex: 1;
+  position: relative;
+  min-width: 0;
 }
 
 /* --- IMAGEN IZQUIERDA --- */
 .img1-izquierda {
+  display: block;  /* evita espacios fantasma entre imágenes */
   width: 100%;
   height: 100%;
   object-fit: cover;
-  clip-path: polygon(0 0, 100% 0, 92% 100%, 0 100%);
   transition: transform 0.3s ease;
 }
 
 /* --- IMAGEN DERECHA --- */
 .img1-derecha {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  clip-path:polygon(8% 0, 100% 0, 100% 100%, 0 100%);
   transition: transform 0.3s ease;
 }
-
-.enlace-amateur, .enlace-pro, .enlace-novato{text-decoration: none; color: #fff; }
-.enlace-amateur:hover, .enlace-pro:hover, .enlace-novato:hover{text-decoration: none; color:#b41271; }
-
-.div-central1, .div-central2, .div-central3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 250px;
-    height: 250px;
-    background: rgb(0 0 0 / 70%);
-    border-radius: 50%;
-    z-index: 2;
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+.img1-izquierda{
+  clip-path: polygon(0 0, 100% 0, calc(100% - var(--corte)) 100%, 0 100%);
+}
+.img1-derecha{
+  clip-path: polygon(var(--corte) 0, 100% 0, 100% 100%, 0 100%);
 }
 
-.div-central:hover{
-  box-shadow: #fff;
-}
-
-.contenido-central{
+/* --- CÍRCULO CENTRAL (una sola clase para todos los planes) --- */
+.div-central {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  background: rgb(0 0 0 / 70%);
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
   display: grid;
+  place-items: center;
   text-align: center;
+  padding: 1.25rem;
+  box-sizing: border-box;
 }
 
-.contenido-central h2{
-  color: #fff;
+.div-central:hover {
+  box-shadow: 0 0 35px rgba(255, 255, 255, 0.6);
 }
 
-.contenido-central p{
+/* Enlaces */
+.enlace-amateur, .enlace-pro, .enlace-novato {
+  text-decoration: none;
   color: #fff;
+  display: block;
+}
+
+.enlace-amateur:hover, .enlace-pro:hover, .enlace-novato:hover {
+  color: #b41271;
+}
+
+/* Texto dentro del círculo */
+.contenido-central h2 {
+  color: #fff;
+  margin: .25rem 0 .5rem;
+}
+
+.contenido-central p {
+  color: #fff;
+  margin: .15rem 0;
+  font-size: .95rem;
 }
