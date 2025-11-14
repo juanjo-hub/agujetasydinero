@@ -1,3 +1,6 @@
+/*
+ESTILOS GENERAL
+*/
 @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap');
 html, body{
     font-family: "BBH Sans Bogle", sans-serif;
@@ -89,7 +92,8 @@ main{ padding-top: 80px;}
     height: 100%;
     object-fit: cover; /* Se comporta como background-size: cover */
     z-index: -1; /* Lo coloca detrás del contenido */
-}
+    padding: 2rem;
+  }
 
 /* Texto */
 .h2-div1 {
@@ -142,14 +146,13 @@ main{ padding-top: 80px;}
   flex-direction: column;
   justify-content: space-between; /* empuja contenido arriba y botón abajo */
   align-items: center;            /* centra horizontalmente el botón */
-  background: #fff;
-  color: #000;
+  color: #ffffff;
   clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
   padding: 5rem;
   height: 400px;
 }
 
-.div1_5 > h1{ color: #000; font-size: 4.2rem; text-align: center;padding-top: 2rem; margin: 0;}
+.div1_5 > h1{ color: #ffffff; font-size: 4.2rem; text-align: center;padding-top: 2rem; margin: 0;}
 
 .div2 {
   color: white;
@@ -472,4 +475,7 @@ footer {
 .footer-social a:hover {
   color: #e1306c; /* color típico Instagram o TikTok */
 }
+
+
+
 

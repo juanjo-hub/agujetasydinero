@@ -1,32 +1,117 @@
-/* Estilos para los botones de cantidad */
-.btn-cantidad {
-    padding: 5px 10px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    background-color: #f0f0f0;
-    margin: 5px;
+/*
+URL: CARRO
+*/
+
+#carrito-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea las columnas desde arriba */
+    gap: 1rem; /* Espacio entre las columnas */ 
+    margin: 2rem auto; /* Centra el layout completo */
+    padding: 0 2rem;
+    margin-top: 8rem;
+
+    /* 💥 CLAVE PARA EMPUJAR EL FOOTER: Permite que el layout crezca */
+    flex-grow: 1; 
 }
 
-.btn-cantidad:hover {
-    background-color: #e0e0e0;
+#mensaje-carrito {
+    text-align: center;
+    border: 2px dashed #b41271; 
+    border-radius: 10px;
+    margin: 50px auto; 
+    width: 80%; 
+    color: #b41271; 
+}
+
+#columna-productos {
+    flex-grow: 1; /* Esto hace que ocupe la mayor parte del espacio libre */
+    min-width: 70%; 
+}
+
+/* Eliminamos los márgenes y paddings redundantes del contenedor de productos, 
+   ya que ahora los gestiona el padre #columna-productos */
+#productos-carrito {
+    max-width: none; 
+    margin: 0; 
+    padding: 0;
+    /* 💡 El height: 200px es probablemente un error y debería eliminarse para que crezca libremente */
+    /* height: 200px; */ 
+}
+
+#precio-total {
+    text-align: right;
+    margin-top: 20px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #000000;
+    background: #fff;
+    margin: 0;
+}
+
+.div-pago {
+    width: 300px;
+    border-radius: 8px;
+    color: #000000;
+    background-color: #fff;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    line-height: 1.5rem;
+}
+
+
+/* El botón debe llenar el ancho de su columna */
+#btn-pago {
+    padding: 1rem; /* Más grande y visible */
+    width: 50%;
+    background-color: #b41271;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+#btn-pago:hover {
+    background-color: #9c0f60;
+}
+
+img.imagen-carrito{
+    max-width: 100px;
+}
+
+div#productos-carrito{
+    background: #fff;
+    text-align: center;
+
 }
 
 .producto-en-carrito {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    background-color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 1rem;
+}
+button.btn-cantidad.btn-mas, button.btn-cantidad.btn-menos{
+    max-width: 3rem;
+    color: #000000;
+    font-size: 1.2rem;
+    border:none;
+    cursor: pointer;
 }
 
-.producto-en-carrito .descripcion {
-    font-weight: bold;
+button.btn-cantidad.btn-mas:hover, button.btn-cantidad.btn-menos:hover{
+    color: #ffffff;
+    background: #b41271;
+    border: none;
 }
 
-.producto-en-carrito .precio {
-    color: #333;
-}
-
-.producto-en-carrito .acciones {
-    margin-top: 10px;
+.acciones {
+    display: flex;
+    justify-content: flex-start;
+    /* width: 100%; */
+    /* margin-top: 5px; */
+    flex-direction: column;
 }

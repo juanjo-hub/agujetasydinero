@@ -1,0 +1,75 @@
+/*
+URL: PAGO
+*/
+#container-pago {
+    gap: 2rem;
+    height: 80vh;
+    display: flex;
+        justify-content: center; /* Centrado horizontal */
+        align-items: center; /* Centrado vertical */
+        width: 100%;
+    }
+
+    .tarjeta-pago {
+        /* Estilo de la "tarjeta" individual */
+        width: 20%;
+        padding: 20px;
+        border-radius: 12px;
+        background-color: #fff; 
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .tarjeta-pago:hover {
+        /* Efecto al pasar el ratón */
+        border-color: #b41271; 
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(180, 18, 113, 0.2);
+    }
+    
+    /* Indicador de selección (opcional, si usas JS) */
+    .tarjeta-pago.selected {
+        border-color: #b41271; 
+        box-shadow: 0 0 0 4px rgba(180, 18, 113, 0.3);
+    }
+
+    .logo-placeholder {
+        /* Contenedor que define el tamaño del logo */
+        margin: 10px auto 15px auto;
+        width: 80px; 
+        height: 80px;
+        /* Aseguramos que el logo interno se centre */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ESTILO NUEVO PARA IMAGEN PNG */
+    .logo-img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Asegura que la imagen se vea completa sin cortar */
+        display: block;
+    }
+
+    .tarjeta-pago h3 {
+        margin-top: 0;
+        color: #333;
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+    
+    /* Responsive adjustment */
+    @media (max-width: 650px) {
+        #container-pago {
+            flex-direction: column;
+            gap: 20px;
+        }
+        .tarjeta-pago {
+            width: 80%;
+            max-width: 300px;
+        }
+    }

@@ -1,45 +1,116 @@
-#titular{text-align: center; height: 30vh;}
-h1{
+/* -------------------------------------------------------------------------- */
+/* Estilos de Sobre Nosotros                          */
+/* -------------------------------------------------------------------------- */
+
+.main-sobrenosotros {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+#titular {
+    text-align: center;
+    margin-bottom: 40px;
+    margin: 3rem 0;
+}
+
+#titular h1 {
     font-size: 3rem;
-    color: #fff;
-    background: #000;
-    text-align: center;
-    letter-spacing: 2px;
+    color: var(--color-principal);
+    position: relative;
+    display: inline-block;
 }
 
-.art-mision, .art-valores, .art-vision{
-    width: 100%;
-    background-attachment: fixed; /* Efecto parallax */
+/* Subrayado con el color de acento */
+#titular h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 4px;
+    background-color: var(--color-acento);
+    border-radius: 2px;
 }
 
-.art-mision{
-    color: #fff;
+/* Layout de los artículos con Flexbox/Grid */
+.art-todos {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
     text-align: center;
-    height: 50vh;
 }
 
-.art-vision{
+.art-mision, .art-vision, .art-valores {
+    background-color: var(--color-fondo-claro);
+    border: 1px solid #eeeeee;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px var(--color-sombra);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.art-mision:hover, .art-vision:hover, .art-valores:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.h2-sobrenosotros {
     color: #fff;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px; 
-    text-align: center;
-    height: 50vh;
+    font-size: 1.6rem;
+    border-bottom: 2px solid var(--color-principal);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
-.art-valores{   
-    color: #ffffff;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px; 
-    text-align: center;
-    height: 50vh;
+.p-sobrenosotros {
+    color: var(--color-texto-oscuro);
+    font-size: 1rem;
+    line-height: 1.7;
 }
 
-.h2-sobrenosotros{
-    font-size: 2rem;
-    letter-spacing: 2px;
+/* Estilo para la sección de imágenes */
+.art-sobrenosotros {
+    grid-column: 1 / -1; /* Ocupa todo el ancho */
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Para que se adapten en pantallas pequeñas */
+}
+
+.img-sobrenosotros {
+    width: calc(25% - 15px); /* 4 imágenes en fila, descontando el gap */
+    height: 200px; /* Altura fija para un aspecto uniforme */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsión */
+    border-radius: 10px;
+    filter: grayscale(80%); /* Efecto visual de alto contraste/estilo */
+    transition: filter 0.5s, transform 0.5s;
+    background-color: #e0e0e0; /* Color de fondo si no hay imagen */
+}
+
+.img-sobrenosotros:hover {
+    filter: grayscale(0%); /* Color al pasar el ratón */
+    transform: scale(1.02);
+}
+
+/* Media Query para la sección de imágenes en dispositivos pequeños */
+@media (max-width: 768px) {
+    .art-todos {
+        grid-template-columns: 1fr; /* Una columna en móvil */
+    }
+
+    .img-sobrenosotros {
+        width: calc(50% - 10px); /* 2 imágenes en fila */
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .img-sobrenosotros {
+        width: 100%; /* 1 imagen por fila en el móvil más pequeño */
+        height: 200px;
+    }
 }

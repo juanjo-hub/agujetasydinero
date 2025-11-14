@@ -6,7 +6,7 @@
     <title>Tu Carrito - Agujetas y Dinero</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="carro.css">
-    <link rel="stylesheet" href="tienda.css">
+
 </head>
 <body>
     <header>
@@ -22,14 +22,27 @@
         </nav>
     </header>
 
-  <main>
-        <div id="contenido-carrito">
-            <h2>Tu Carrito</h2>
-            <div id="productos-carrito"></div>
-            <div id="mensaje-carrito" style="display: none;">Tu carrito está vacío</div>
-            <div id="precio-total">Total: €0.00</div>
+<main id="carrito-layout"> 
+    
+
+    <div id="columna-productos">
+        <div id="productos-carrito">
         </div>
-    </main>
+        <p id="mensaje-carrito" style="display:none;">¡Oh vaya! Tu carrito está vacío.🛒</p>
+        <div id="precio-total">TOTAL: 0.00€</div>
+    </div>
+    
+    <div class="div-pago">
+        <h2>Métodos de pago</h2>
+        <ul>
+            <li>Paypal</li>
+            <li>Tarjeta Bancaria</li>
+            <li>Bizum</li>
+        </ul>
+<a href="pago.html">
+    <button id="btn-pago">Realizar pago</button>
+</a>    </div>
+</main>
 
     <footer>
         <div class="footer-container">
