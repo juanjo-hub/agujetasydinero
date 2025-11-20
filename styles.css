@@ -474,6 +474,27 @@ footer {
   color: #e1306c; /* color típico Instagram o TikTok */
 }
 
+.carrito-btn {
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
+.carrito-btn:hover {
+    background-color: #b41271;
+}
 
-
+#cantidad-carrito {
+    background: #b41271;
+    border: 1px solid #000;
+    color: #fff;
+    margin: 5px;
+    padding: 2px 5px;              
+    display: inline-flex;      
+    align-items: center;      
+    justify-content: center;    
+}
