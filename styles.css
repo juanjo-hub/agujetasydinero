@@ -75,7 +75,7 @@ main{ padding-top: 80px;}
 /*DIV1*/
 .div1 {
     position: relative;
-    height: 50vh;
+    height: 55vh;
     display: grid;
     place-items: center;
     text-align: center;
@@ -475,6 +475,7 @@ footer {
 .footer-social a:hover {
   color: #e1306c; /* color típico Instagram o TikTok */
 }
+
 
 
 
