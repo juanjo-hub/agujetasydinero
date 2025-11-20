@@ -44,8 +44,9 @@
 }
 
 .art-mision, .art-vision, .art-valores {
-    background-color: var(--color-fondo-claro);
-    border: 1px solid #eeeeee;
+    background-color: #fff;
+    border: 1px solid #000000;
+    color: #000000;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 10px 20px var(--color-sombra);
@@ -58,8 +59,9 @@
 }
 
 .h2-sobrenosotros {
-    color: #fff;
-    font-size: 1.6rem;
+    color: #000000;
+    font-size: 2rem;
+    align-items: center;
     border-bottom: 2px solid var(--color-principal);
     padding-bottom: 5px;
     margin-bottom: 15px;
@@ -73,22 +75,35 @@
 
 /* Estilo para la sección de imágenes */
 .art-sobrenosotros {
-    grid-column: 1 / -1; /* Ocupa todo el ancho */
+    grid-column: 1 / -1;        /* Ocupa todo el ancho del grid */
     display: flex;
-    gap: 15px;
-    justify-content: space-between;
-    margin-top: 30px;
-    flex-wrap: wrap; /* Para que se adapten en pantallas pequeñas */
+    flex-wrap: wrap;            /* Título + fila de imágenes */
+    justify-content: center;    /* Centra el bloque completo */
+    gap: 30px;
+    margin-top: 40px;
 }
 
+/* Título EL EQUIPO a lo ancho y centrado */
+.art-sobrenosotros h2 {
+    flex: 0 0 100%;             /* Ocupa toda la fila */
+    text-align: center;
+    font-size: 3rem;
+    margin: 0 0 1.5rem;
+}
+
+/* Cada imagen */
 .img-sobrenosotros {
-    width: calc(25% - 15px); /* 4 imágenes en fila, descontando el gap */
-    height: 200px; /* Altura fija para un aspecto uniforme */
-    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsión */
+    width: 20%;
+    height: auto;               /* Sin altura fija, no se corta */
     border-radius: 10px;
-    filter: grayscale(80%); /* Efecto visual de alto contraste/estilo */
+    filter: grayscale(80%);
     transition: filter 0.5s, transform 0.5s;
-    background-color: #e0e0e0; /* Color de fondo si no hay imagen */
+    background-color: #e0e0e0;
+}
+
+.img-sobrenosotros:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
 }
 
 .img-sobrenosotros:hover {
@@ -96,7 +111,6 @@
     transform: scale(1.02);
 }
 
-/* Media Query para la sección de imágenes en dispositivos pequeños */
 @media (max-width: 768px) {
     .art-todos {
         grid-template-columns: 1fr; /* Una columna en móvil */
@@ -104,13 +118,13 @@
 
     .img-sobrenosotros {
         width: calc(50% - 10px); /* 2 imágenes en fila */
-        height: 150px;
+        height: auto;            /* IMPORTANTE: nada de 150px */
     }
 }
 
 @media (max-width: 480px) {
     .img-sobrenosotros {
         width: 100%; /* 1 imagen por fila en el móvil más pequeño */
-        height: 200px;
+        height: auto; /* Nada de 200px */
     }
 }
