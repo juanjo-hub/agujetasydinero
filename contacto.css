@@ -1,137 +1,240 @@
-/*
-URL: PAGO
-*/
-
-/* Grid principal */
-body{
-     background: url('Imagenes/Contacto/fondo-contacto.webp') no-repeat center center / cover fixed;
-}
-/* ===== Ajuste del contenedor principal ===== */
-main{
-  /* De 40% 40% a dos columnas iguales centradas */
+/* ===== Layout principal tipo wireframe ===== */
+body{background: #ffffff;}
+.contacto-main{
+  width: min(1100px, 94vw);
+  margin: 6rem auto 4rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  /* centrado y ancho consistente */
-  width: min(1200px, 92vw);
-  margin: 6rem auto 2rem;   /* baja bajo el header fijo y centra */
-  padding: 2rem;
-  align-items: start;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 3rem;
+  align-items: stretch;
 }
 
-/* Mapa e info con caja consistente */
-.div-maps{
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid rgba(255,255,255,.08);
-  background: #000;
-}
-.div-maps iframe{
-  width: 100%;
-  height: 100%;
-  min-height: 450px;
-  border: 0;
-  display: block;
-}
-.div-info{
-  background: rgba(0,0,0,.55);
-  border: 1px solid rgba(255,255,255,.08);
-  border-radius: 12px;
-  padding: 1.25rem 1.5rem;
-  color: #fff;
+/* -------- Columna izquierda (texto / tarjetas) -------- */
+.contacto-info{
+  color: #111827;
 }
 
-/* ===== El formulario: mismo ancho visual y layout en 2 columnas ===== */
+.contacto-kicker{
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-size: .8rem;
+  font-weight: 700;
+  color: #b41271;           /* morado suave */
+  margin-bottom: .5rem;
+}
+
+.contacto-title{
+  font-size: clamp(2.2rem, 3vw, 2.6rem);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.contacto-text{
+  color: #dae2ec;
+  font-size: .98rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+/* Tarjetas de email / teléfono */
+.contacto-card-mini{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #ece6e6;
+  border-radius: 14px;
+  padding: .9rem 1.3rem;
+  box-shadow: 0 10px 30px rgba(15,23,42,.06);
+  margin-bottom: .9rem;
+  max-width: 340px;
+}
+
+.icon-wrapper{
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(139,92,246,.12);
+  color: #b41271;
+  font-size: 1.1rem;
+}
+
+.mini-label{
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: #9ca3af;
+  margin-bottom: .1rem;
+}
+
+.mini-data{
+  font-weight: 600;
+  color: #111827;
+}
+
+.mini-data a{
+  color: inherit;
+  text-decoration: none;
+}
+.mini-data a:hover{
+  text-decoration: underline;
+}
+
+/* Redes sociales */
+.contacto-social-text{
+  margin-top: 1.5rem;
+  margin-bottom: .6rem;
+  font-size: .9rem;
+  color: #000000;
+}
+
+.contacto-social{
+  display: flex;
+  gap: .6rem;
+}
+
+.contacto-social a{
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: #000000;
+  font-size: .9rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+}
+.contacto-social a:hover{
+  transform: translateY(-1px);
+}
+
+/* -------- Columna derecha (tarjeta formulario) -------- */
+.contacto-form-wrapper{
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 1.8rem 2rem;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: stretch;
+}
+
+/* Formulario dentro de la tarjeta */
 .form-contacto{
-  /* mismo ancho y centrado que main */
-  width: min(1200px, 92vw);
-  margin: 0 auto 3rem;
-
-  /* caja */
-  background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
-  border: 1px solid rgba(255,255,255,.10);
-  border-radius: 12px;
-  padding: clamp(1rem, 3vw, 1.5rem);
-
-  /* reflow de campos sin tocar HTML */
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));  /* 2 columnas */
-  gap: 1rem 1.25rem;
-
-  /* anula posibles límites estrechos previos */
-  max-width: none;
-  background: #000;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  background: transparent;
+  border: none;
+  padding: 0;
 }
 
 .form-contacto .form-group{
-  display: grid;
-  gap: .35rem;
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
 }
 
-/* Mensaje, checkbox y botón a ancho completo */
-.form-contacto .form-group:nth-of-type(4){ grid-column: 1 / -1; }  /* Mensaje */
-.form-contacto .checkbox{ grid-column: 1 / -1; }
-.form-contacto .btn-enviar{
-  grid-column: 1 / -1;
-  justify-self: start;
+.form-contacto label{
+  font-size: .85rem;
+  font-weight: 600;
+  color: #000000;
 }
 
-
-/* Inputs/textarea con estados limpios (respetando tus clases) */
-.form-contacto label{ color: #cbd5e1; line-height: 2px; margin-bottom: 1rem;}
 .form-contacto input,
 .form-contacto textarea{
-  padding: .8rem 1rem;
-  margin-bottom: 2rem;
-  border-radius: 10px;
-  border: 1px solid rgba(255,255,255,.15);
-  background: rgba(255,255,255,.06);
-  color: #fff;
+  padding: .7rem .85rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: #111827;
   outline: none;
-  transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
+  font-size: 1rem;
+  transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
 }
+
 .form-contacto input::placeholder,
-.form-contacto textarea::placeholder{ color: #9aa4b2; }
+.form-contacto textarea::placeholder{
+  color: #9ca3af;
+}
+
 .form-contacto input:focus,
 .form-contacto textarea:focus{
   border-color: #b41271;
-  box-shadow: 0 0 0 3px rgba(180,18,113,.25);
-  background: rgba(255,255,255,.08);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.25);
+  background: #ffffff;
 }
 
-/* Botón (tu clase) */
-.btn-enviar{
-  background: #b41271;
-  color: #fff;
-  font-weight: 800;
-  border: 1px solid #b41271;
-  padding: .9rem 1.2rem;
-  border-radius: 999px;
-  cursor: pointer;
+.form-contacto textarea{
+  resize: vertical;
+  min-height: 130px;
 }
-.btn-enviar:hover{ filter: brightness(1.05); }
 
-
-/* Alinear el checkbox e texto en una fila */
+/* Checkbox */
 .form-contacto .checkbox{
-  grid-column: 1 / -1;       /* ya lo tienes, lo dejo por claridad */
-  display: flex !important;  /* anula el display:grid heredado */
-  align-items: center;       /* centra verticalmente */
-  gap: .6rem;                /* hueco entre check y texto */
-  justify-self: start;       /* evita que se centre el bloque */
+  display: flex;
+  align-items: flex-start;
+  gap: .55rem;
+  margin-top: .3rem;
 }
 
 .form-contacto .checkbox input[type="checkbox"]{
-  margin: 0;                 /* sin margen extraño */
-  inline-size: 1.1rem;       /* tamaño del check */
-  block-size: 1.1rem;
-  accent-color: #b41271;     /* color corporativo del check */
+  margin-top: .18rem;
+  inline-size: 1rem;
+  block-size: 1rem;
+  accent-color: #b41271;
 }
 
 .form-contacto .checkbox label{
-  margin: 0;
-  line-height: 1.35;
+  font-size: .82rem;
+  font-weight: 400;
+  color: #b41271;
 }
 
+.enlace-privacidad{
+  color: #b41271;
+}
 
-.enlace-privacidad{color: #b41271;}
+/* Botón enviar */
+.btn-enviar{
+  margin-top: .5rem;
+  align-self: flex-start;
+  background: #b41271;
+  color: #ffffff;
+  font-size: 1rem;
+  border: none;
+  padding: .5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+.btn-enviar:hover{
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px){
+  .contacto-main{
+    grid-template-columns: 1fr;
+    margin-top: 5.5rem;
+  }
+
+  .contacto-form-wrapper{
+    order: -1;          
+  }
+}
+
+@media (max-width: 640px){
+  .contacto-main{
+    gap: 2rem;
+  }
+  .contacto-form-wrapper{
+    padding: 1.4rem 1.3rem;
+  }
+}

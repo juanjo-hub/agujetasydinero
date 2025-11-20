@@ -41,68 +41,88 @@
         </nav>
     </header>
 
- <main>
-        <section class="div-maps">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5145.832928606155!2d-3.886856153531196!3d37.87461980781377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd2f5a082942f%3A0x68ca6f18ed4b9f86!2s23180%20Fuerte%20del%20Rey%2C%20Ja%C3%A9n!5e0!3m2!1ses!2ses!4v1762431906959!5m2!1ses!2ses" 
-                width="100%" 
-                height="450" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade"
-                title="Ubicación de Agujetas y Dinero">
-            </iframe>
-        </section>
+<main class="contacto-main">
+    <!-- COLUMNA IZQUIERDA -->
+    <section class="contacto-info">
+        <p class="contacto-kicker">CONTACTO</p>
+        <h1 class="contacto-title">Ponte en contacto hoy</h1>
+        <p class="contacto-text">
+            Nos encanta resolver dudas y escuchar feedback.  
+            Escríbenos o llámanos y te responderemos lo antes posible.
+        </p>
 
-        <section class="div-info">
-            <h2>Contacto</h2>
-            <ul>
-                <li><i class="fa-solid fa-phone"></i> 926 12 34 56</li>
-                <li><i class="fa-solid fa-map-marker-alt"></i> Calle la Pantomima, nº0, Fuerte del Rey</li>
-                <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@agujetasydinero.es">info@agujetasydinero.es</a></li>
-                <li><i class="fa-solid fa-clock"></i> Horario: 6:00 a 22:00 durante todo el año</li>
-            </ul>
-        </section>
+        <div class="contacto-card-mini">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+                <p class="mini-label">Email</p>
+                <p class="mini-data">
+                    <a href="mailto:info@agujetasydinero.es">info@agujetasydinero.es</a>
+                </p>
+            </div>
+        </div>
 
-  </main>
+        <div class="contacto-card-mini">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+                <p class="mini-label">Teléfono</p>
+                <p class="mini-data">926 12 34 56</p>
+            </div>
+        </div>
 
-    <form action="enviar-formulario.php" method="post" class="form-contacto">
-    <div class="form-group">
-        <label for="nombre">Nombre completo:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Manolo Skywalker" required>
-    </div>
+        <p class="contacto-social-text">Búscanos también en:</p>
+        <div class="contacto-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </section>
 
-    <div class="form-group">
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
-    </div>
+    <!-- COLUMNA DERECHA -->
+    <section class="contacto-form-wrapper">
+        <form action="enviar-formulario.php" method="post" class="form-contacto">
+            <div class="form-group">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Manolo Skywalker" required>
+            </div>
 
-    <div class="form-group">
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" placeholder="Ej: 612345678" pattern="[0-9]{9}" required>
-    </div>
+            <div class="form-group">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+            </div>
 
-    <div class="form-group">
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
-    </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono"
+                       placeholder="Ej: 612345678" pattern="[0-9]{9}" required>
+            </div>
 
-    <div class="form-group checkbox">
-        <input type="checkbox" id="privacidad" name="privacidad" required>
-        <label for="privacidad">
-            Acepto los términos de la <a href="politica-privacidad.html" class="enlace-privacidad" target="_blank">Política de Privacidad</a>
-        </label>
-    </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5"
+                          placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
 
-    <button type="submit" class="btn-enviar">Enviar</button>
-</form>
+            <div class="form-group checkbox">
+                <input type="checkbox" id="privacidad" name="privacidad" required>
+                <label for="privacidad">
+                    Acepto los términos de la
+                    <a href="politica-privacidad.html" class="enlace-privacidad" target="_blank">
+                        Política de Privacidad
+                    </a>
+                </label>
+            </div>
 
+            <button type="submit" class="btn-enviar">Enviar mensaje</button>
+        </form>
+    </section>
+</main>
 
-  
-
-
-    <footer>
+<footer>
     <div class="footer-container">
         <div class="footer-left">
             <a href="#logo"><img src="logo.png" alt="Logo Agujetas y Dinero" class="footer-logo"></a>
@@ -121,7 +141,7 @@
                     <li><a href="tienda.html">Tienda</a></li>
                     <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="unete.html">Registro</a></li>
+                    <li><a href="registro.html">Registro</a></li>
                 </ul>
             </div>
 
