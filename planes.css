@@ -19,7 +19,9 @@
 }
 
 #h1-planes{color: #fff; margin-top: 7rem; text-align: center; font-size: 3rem;}
-
+@media (max-width: 499px) {
+font-size:1.5rem;
+}
 /* Cada contenedor de imagen */
 .img-div {
   flex: 1;
@@ -96,3 +98,4 @@
   margin: .15rem 0;
   font-size: .95rem;
 }
+
