@@ -599,16 +599,7 @@ footer {
     }
 }
 #membresia {
-    /* border: 1px solid #fff; */
-    padding: 0.8rem;
-    text-decoration
-Decorations applied to font used for an element's text.
-
-Widely available across major browsers (Baseline since January 2018)
-Learn more
-
-Don't show
-: none;
+    text-decoration: none;
     color: #b41271;
 }
 /* ============================================
@@ -644,6 +635,7 @@ Don't show
     flex-direction: column;
     align-items: center;
 }
+
 
 
 
