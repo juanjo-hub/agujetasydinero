@@ -4,6 +4,7 @@ ESTILOS GENERAL
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 html, body{
+    font-family: "Montserrat", sans-serif;
     width: 100vw;
     background: #000;
     overflow-x: hidden;
@@ -597,6 +598,7 @@ footer {
         transform: translateY(-6px) rotate(-45deg);
     }
 }
+
 
 
 
