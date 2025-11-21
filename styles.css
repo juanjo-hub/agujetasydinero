@@ -579,6 +579,7 @@ footer {
     #carrito {
         display: inline-block;
         padding: 0;
+        border: none;
     }
 }
 
@@ -596,4 +597,5 @@ footer {
         transform: translateY(-6px) rotate(-45deg);
     }
 }
+
 
