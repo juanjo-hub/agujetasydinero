@@ -326,4 +326,23 @@ if (divProductosCarrito) {
     document.addEventListener('DOMContentLoaded', () => {
       actualizarContadorHeader();
     });
+
 }
+
+
+
+
+/*
+MENÚ HAMBURGUESA HEADER
+*/
+document.addEventListener('DOMContentLoaded', () => {
+  const nav = document.querySelector('header nav.main-nav');
+  const toggle = document.querySelector('.nav-toggle');
+
+  if (!nav || !toggle) return;
+
+  toggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+});
