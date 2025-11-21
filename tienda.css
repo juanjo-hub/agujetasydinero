@@ -6,7 +6,7 @@ URL: TIENDA
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 3rem;
     padding: 2rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .producto-nutricion, .producto-accesorios {
@@ -113,4 +113,6 @@ button:hover {
     color: #000000;
     box-shadow: 0px 3px 6px #000;
 }
+
+#h1-tienda{color: #fff; margin-top: 7rem; text-align: center; font-size: 3rem;}
 /*FIN CSS ASIDE*/
