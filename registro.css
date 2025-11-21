@@ -20,12 +20,7 @@ main {
     align-items: center;
     margin-top: 5rem;
 }        
-
-h2 {
-text-align: center;
-margin-bottom: 1.5rem;
-color: #ffffff;
-}
+#h1-registro{color: #fff; text-align: center; font-size: 3rem; margin-bottom: 1.5rem;}
 
 label {
 display: block;

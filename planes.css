@@ -18,6 +18,8 @@
     --corte: clamp(64px, 7vw, 120px);          /* variable para mantener cortes iguales */
 }
 
+#h1-planes{color: #fff; margin-top: 7rem; text-align: center; font-size: 3rem;}
+
 /* Cada contenedor de imagen */
 .img-div {
   flex: 1;
