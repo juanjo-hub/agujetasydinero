@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /carrito.html
+Disallow: /carro.html
+Disallow: /pago.html
+Disallow: /iniciasesion.html
+Disallow: /registro.html
+
+Sitemap: https://juanjo-hub.github.io/agujetasydinero/sitemap.xml
