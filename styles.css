@@ -497,36 +497,7 @@ footer {
     align-items: center;      
     justify-content: center;    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ---------- MENÚ HAMBURGUESA ---------- */
-
 /* Estructura base */
 .main-nav {
     position: relative;
@@ -607,6 +578,7 @@ footer {
 
     #carrito {
         display: inline-block;
+        padding: 0;
     }
 }
 
@@ -624,3 +596,4 @@ footer {
         transform: translateY(-6px) rotate(-45deg);
     }
 }
+
