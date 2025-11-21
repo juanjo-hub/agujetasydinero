@@ -1,7 +1,6 @@
  body{
     background: url('pattern.svg');}
  
- 
 main {
     display: flex;
     justify-content: center;

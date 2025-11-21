@@ -1,0 +1,198 @@
+/* Fondo específico para la página de inicio de sesión */
+#body-registro {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+}
+
+/* El main se estira para empujar el footer abajo */
+#body-registro main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: #222;
+}
+
+/* Contenedor principal del login */
+.momo-login-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(2rem, 5vw, 4rem) clamp(1.5rem, 5vw, 3rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(2rem, 6vw, 6rem);
+    box-sizing: border-box;
+}
+
+/* Logo grande de la izquierda */
+.logo-brand {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#logo-sesion {
+    max-width: min(260px, 60vw);
+    height: auto;
+}
+
+/* Tarjeta de login */
+.momo-card {
+    flex: 0 1 380px;
+    max-width: 100%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    padding: 2rem 2.5rem;
+    box-sizing: border-box;
+}
+
+.momo-title {
+    margin: 0 0 1.5rem;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 2rem;
+    color: #b41271;
+}
+/* Formulario */
+.momo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.momo-form label {
+    font-size: 0.85rem;
+    color: #000000;
+}
+
+.momo-form input[type="email"],
+.momo-form input[type="password"], .momo-form input[type="telefono"] {
+    width: 100%;
+    padding: 0.55rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid #cfcfcf;
+    font-size: 0.9rem;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #fafafa;
+}
+
+.momo-form input[type="email"]:focus,
+.momo-form input[type="password"]:focus, .momo-form input[type="telefono"]:focus {
+    border-color: #b41271;
+    background-color: #ffffff;
+}
+
+/* Fila remember + forgot */
+.momo-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.25rem;
+    gap: 0.5rem;
+}
+
+.momo-remember {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.momo-remember input {
+    width: 14px;
+    height: 14px;
+}
+
+/* Botón enviar */
+.momo-submit {
+    margin: 1.2rem auto 0;
+    display: block;
+    padding: 0.45rem 2.5rem;
+    border-radius: 999px;
+    border: 1px solid #b41271;
+    background: transparent;
+    color: #b41271;
+    letter-spacing: 0.2em;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.1s ease;
+}
+
+.momo-submit:hover {
+    background-color: #b41271;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+/* Crear cuenta */
+.momo-create {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.momo-link-small {
+    font-size: 0.8rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+.momo-link-small:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+
+/* Tablets y móviles: apilar logo y tarjeta */
+@media (max-width: 768px) {
+    .momo-login-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .momo-card {
+        width: 100%;
+        max-width: 420px;
+        padding: 1.75rem 1.5rem;
+    }
+
+    .momo-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .momo-row a.momo-link-small {
+        align-self: flex-end;
+    }
+}
+
+/* Móviles pequeños: todo aún más compacto */
+@media (max-width: 480px) {
+    #logo-sesion {
+        max-width: 180px;
+    }
+
+    .momo-card {
+        padding: 1.5rem 1.25rem;
+        border-radius: 10px;
+    }
+
+    .momo-submit {
+        width: 100%;
+    }
+}
+
+#footer-iniciosesion{margin: 0;}

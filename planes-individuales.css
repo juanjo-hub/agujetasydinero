@@ -102,7 +102,7 @@ a.btn {
     background: #000;
     text-decoration: none;
     color: #fff;
-    padding: 0.3rem;
+    padding: 0.5rem 0.9rem;
     border: 2px solid #b41271;
 }
 
@@ -110,6 +110,28 @@ a.btn:hover{
     background: #ffffff;
     text-decoration: none;
     color: #b41271;
-    padding: 0.3rem;
     border: 2px solid #000000;
 }
+
+.div-dudas {
+    /* align-content: center; */
+    background: #000;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    width: 70%;
+    margin: 3rem auto;
+    border-radius: 10px;
+}
+.h3-duda{font-size: 2rem;}
+
+button#btn-duda {
+    padding: 0.5rem 1rem;
+    background: #b41271;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+
+button#btn-duda:hover{background: #fff; color: #000; border-color: #b41271;}

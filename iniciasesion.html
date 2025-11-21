@@ -6,7 +6,7 @@
     <meta name="description" content="Inicio de sesión para clientes de Agujetas y Dinero">
     <title>Iniciar Sesión | Agujetas & Dinero</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="registro.css">
+    <link rel="stylesheet" href="iniciosesion.css">
 </head>
 <body id="body-registro">
 
@@ -19,47 +19,84 @@
             <a href="sobre-nosotros.html" class="a-nav">Sobre Nosotros</a>
             <a href="contacto.html" class="a-nav">Contacto</a>
             <a href="carro.html" id="carrito" class="a-nav">🛒 Carrito<span id="cantidad-carrito">0</span></a>
-            <a href="registro.html" id="membresia">REGISTRO</a>
+            <a href="registro.html" id="membresia">MIEMBRO/REGISTRO</a>
         </nav>
     </header>
 
     <main>
-        <h1>INICIO SESIÓN</h1>
+        <section class="momo-login-wrapper">
+            <div class="logo-brand">
+                <img src="logo-sinfondo.webp" id="logo-sesion" alt="Logo de Agujetas y Dinero">
+            </div>
+
+            <div class="momo-card">
+                <h1 class="momo-title">REGISTRARSE</h1>
+
+<form class="momo-form" action="#" method="post">
+
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" required>
+
+    <label for="telefono">Teléfono</label>
+    <input id="telefono" name="telefono" type="tel" placeholder="+34 600 000 000" required>
+
+    <label for="password">Contraseña</label>
+    <input id="password" name="password" type="password" required>
+
+    <div class="momo-row">
+        <label class="momo-remember">
+            <input type="checkbox" name="remember">
+            <span>Recordarme</span>
+        </label>
+        <a href="#" class="momo-link-small">¿Olvidaste la contraseña?</a>
+    </div>
+
+    <button type="submit" class="momo-submit">ENTRAR</button>
+
+</form>
+
+
+                <div class="momo-create">
+                    <span>Si ya tienes cuenta</span>
+                    <a href="registro.html" class="momo-link-small">Haz clic aquí</a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-    <div class="footer-container">
-        <div class="footer-left">
-            <a href="#logo"><img src="logo-sinfondo.webp" alt="Logo Agujetas y Dinero" class="footer-logo"></a>
-            <p>© 2025 Agujetas y Dinero<br>
-            Entrena fuerte, gasta menos.<br>
-            Todos los derechos reservados.</p>
-        </div>
-
-        <div class="footer-right">
-            <div class="footer-col">
-                <h3>Explora</h3>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="planes.html">Planes</a></li>
-                    <li><a href="tienda.html">Tienda</a></li>
-                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="registro.html">Registro</a></li>
-                </ul>
+    <footer id="footer-iniciosesion">
+        <div class="footer-container">
+            <div class="footer-left">
+                <a href="#logo"><img src="logo-sinfondo.webp" alt="Logo Agujetas y Dinero" class="footer-logo"></a>
+                <p>© 2025 Agujetas y Dinero<br>
+                Entrena fuerte, gasta menos.<br>
+                Todos los derechos reservados.</p>
             </div>
 
-            <div class="footer-col">
-                <h3>Legal</h3>
-                <ul>
-                    <li><a href="aviso-legal.html">Aviso Legal</a></li>
-                    <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
-                    <li><a href="politica-cookies.html">Política de Cookies</a></li>
-                </ul>
+            <div class="footer-right">
+                <div class="footer-col">
+                    <h3>Explora</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="planes.html">Planes</a></li>
+                        <li><a href="tienda.html">Tienda</a></li>
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="registro.html">Registro</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                        <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="politica-cookies.html">Política de Cookies</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 </body>
 </html>
