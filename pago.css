@@ -3,12 +3,14 @@ URL: PAGO
 */
 #container-pago {
     gap: 2rem;
-    height: 80vh;
+    height: 50vh;
     display: flex;
         justify-content: center; /* Centrado horizontal */
         align-items: center; /* Centrado vertical */
         width: 100%;
     }
+
+    #h1-pago{font-size: 3rem; color: #fff; text-align: center; margin-top: 7rem;}
 
     .tarjeta-pago {
         /* Estilo de la "tarjeta" individual */
