@@ -609,7 +609,7 @@ footer {
 .div1_5 > h1{font-size: 2rem;}
   
 .div1_5{display:flow; height: 600px;}
-.div1_5 > h1{padding: 0rem;}
+.div1_5 > h1{padding: 0.5rem; font-size:1.5rem}
 .btn-div-h1{padding: 0.6rem 0.8rem; font-size: 1.1rem;}
 .div2 h2, h2#h2-div4 {
     color: #fff;
@@ -635,6 +635,7 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+
 
 
 
