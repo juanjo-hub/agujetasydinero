@@ -116,3 +116,16 @@ button:hover {
 
 #h1-tienda{color: #fff; margin-top: 7rem; text-align: center; font-size: 3rem;}
 /*FIN CSS ASIDE*/
+
+
+@media (max-width: 499px) {
+    .filtro {
+    padding: 0.2rem;
+}
+    aside.barra-filtros {
+    padding: 1.5rem;
+}
+}
+
+
+
