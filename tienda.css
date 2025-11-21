@@ -125,7 +125,13 @@ button:hover {
     aside.barra-filtros {
     padding: 1.5rem;
 }
+
+
+#h1-tienda {
+    color: #fff;
+    margin-top: 7rem;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
-
-
+}
