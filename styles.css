@@ -1,7 +1,8 @@
 /*
 ESTILOS GENERAL
 */
-@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 html, body{
     width: 100vw;
     background: #000;
