@@ -68,7 +68,7 @@ URL: CARRO
 }
 
 #btn-pago:hover {
-    background-color: #9c0f60;
+    background-color: #b41271;
 }
 
 img.imagen-carrito{
@@ -106,4 +106,90 @@ button.btn-cantidad.btn-mas:hover, button.btn-cantidad.btn-menos:hover{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+}
+
+/* ================================
+   CARRITO — RESPONSIVE ≤499px
+   ================================ */
+@media (max-width: 499px) {
+
+    /* Layout general: columna */
+    #carrito-layout {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+        padding: 0 1rem;
+        margin-top: 6rem;
+    }
+
+    /* Columna de productos ocupa todo */
+    #columna-productos {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    #productos-carrito {
+        width: 100%;
+        background: #fff;
+        border-radius: 10px;
+        padding: 0;
+    }
+
+    /* Cada producto del carrito */
+    .producto-en-carrito {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        padding: 1.2rem;
+    }
+
+    /* Imagen más pequeña en móvil */
+    .producto-en-carrito img.imagen-carrito {
+        max-width: 80px;
+    }
+
+    /* Acciones: + y - en horizontal */
+    .acciones {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    button.btn-cantidad.btn-mas,
+    button.btn-cantidad.btn-menos {
+        padding: 0.4rem 0.8rem;
+        font-size: 1.1rem;
+    }
+
+    /* Texto TOTAL centrado */
+    #precio-total {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    /* Columna de pago */
+    .div-pago {
+        width: 100%;
+        max-width: 350px;
+        margin-top: 1rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .div-pago ul {
+        padding-left: 0;
+    }
+    #mensaje-carrito{padding: 1.5rem 1rem;}
+    .producto-en-carrito img.imagen-carrito {
+        max-width: 80px;
+        display: block;
+    }
+        .producto-en-carrito {
+        flex-direction: column;gap:0;padding:0;margin: 0;
+    }
+    div#productos-carrito {
+    background: #fff;
+    margin-bottom: 1rem;
+}
 }
