@@ -616,7 +616,6 @@ footer {
 .div2 h2, h2#h2-div4 {
     color: #fff;
     font-size: 2rem;
-    padding: 2rem;
     letter-spacing: 2px;
     font-size: 1.5rem;}
 .btn-div{font-size: 1.1rem; padding: 0.6rem 0.8rem;}
@@ -637,6 +636,7 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+
 
 
 
