@@ -41,10 +41,10 @@ header{
 }
 
 #membresia{
-    border: 1px solid #fff;
     padding: 0.8rem;
     text-decoration: none;
     color: #fff;
+    font-weight: 700;
 }
 
 #membresia:hover{
@@ -664,6 +664,7 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+
 
 
 
