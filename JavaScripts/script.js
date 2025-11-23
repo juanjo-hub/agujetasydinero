@@ -338,11 +338,16 @@ MENÚ HAMBURGUESA HEADER
 document.addEventListener('DOMContentLoaded', () => {
   const nav = document.querySelector('header nav.main-nav');
   const toggle = document.querySelector('.nav-toggle');
+  const icon = document.querySelector('.icon-menu'); // añadimos referencia al icono
 
-  if (!nav || !toggle) return;
+  if (!nav || !toggle || !icon) return;
 
   toggle.addEventListener('click', () => {
     const isOpen = nav.classList.toggle('open');
     toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+
+    // única línea necesaria para cambiar a X
+    icon.src = isOpen ? 'cerrar.svg' : 'hamburguesa.svg';
   });
 });
+
