@@ -413,9 +413,11 @@ footer {
     width: 120px;
 }
 
-.footer-left p {
-    line-height: 2;
-    color: #ccc;
+.footer-left {
+    flex: 1 1 0%;
+    width: 300px;
+    justify-content: center;
+    text-align: center;
 }
 
 .footer-right {
@@ -635,6 +637,7 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+
 
 
 
