@@ -604,6 +604,23 @@ footer {
     text-decoration: none;
     color: #b41271;
 }
+.nav-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-toggle .icon-menu {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
 /* ============================================
    INDEX — RESPONSIVE MÓVIL PEQUEÑO (≤499px)
    ============================================ */
@@ -636,6 +653,7 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+
 
 
 
