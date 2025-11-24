@@ -719,3 +719,123 @@ footer {
 
 
 
+/* ------------------------------------------------------ */
+/* CALCULADORA 1RM (INDEX)                                */
+/* ------------------------------------------------------ */
+
+#calc-rm {
+    max-width: 700px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+#calc-rm h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.rm-form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.rm-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.rm-inputs label {
+    color: #b41271;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.rm-inputs input {
+    padding: 0.8rem 1rem;
+    width: 180px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background: #222;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.rm-inputs input::placeholder {
+    color: #777;
+}
+
+#btn-calcular {
+    padding: 0.9rem 2rem;
+    background: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#btn-calcular:hover {
+    background: #fff;
+    color: #b41271;
+    border-color: #b41271;
+}
+
+#calc-rm hr {
+    margin: 2rem 0;
+    border: none;
+    border-top: 1px solid #444;
+}
+
+#calc-rm h3 {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+#rm-resultado {
+    color: #b41271;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+/* --- RESPONSIVE --- */
+
+@media (max-width: 600px) {
+    #calc-rm {
+        width: 80vw;
+        text-align: left;
+    }
+
+    .rm-form {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    #btn-calcular {
+        width: 50%;
+    }
+    .rm-inputs {
+    display: flex;
+    gap: 0.7rem;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+    #btn-calcular {
+        width: 50%;
+        margin: auto;
+    }
+}

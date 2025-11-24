@@ -68,6 +68,9 @@
     </header>
 
     <main>
+        <div>
+
+        </div>
         <div class="div1" style="position: relative;">
             <video autoplay muted loop playsinline class="background-video" id="bgVideo">
             <source src="video-inicio.mp4" type="video/mp4">
@@ -101,6 +104,28 @@
             </div>
         </div>
         </div>
+        <div id="calc-rm">
+    <h2>Calculadora Repetición Máxima (1RM)</h2>
+
+    <div class="rm-form">
+        <div class="rm-inputs">
+            <label>Peso levantado</label>
+            <input type="number" id="peso" placeholder="kg" min="1">
+
+            <label>Repeticiones (1-10)</label>
+            <input type="number" id="reps" placeholder="(1-10)" min="1" max="10">
+        </div>
+
+        <button id="btn-calcular">Calcular</button>
+    </div>
+
+    <hr>
+
+    <h3>Repetición Máxima (KG)</h3>
+
+    <div id="rm-resultado"></div>
+</div>
+
 
         <div class="div3">
             <h2 id="h2-div3">¿TIENES DUDAS? PREGÚNTANOS</h2>

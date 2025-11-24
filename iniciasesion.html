@@ -45,13 +45,15 @@
             <div class="momo-card">
                 <h1 class="momo-title">REGISTRARSE</h1>
 
-<form class="momo-form" action="#" method="post">
+<form class="momo-form" id="registro-form" action="javascript:void(0);">
+    <label for="nombre">Nombre completo</label>
+    <input id="nombre" name="nombre" type="text" maxlength="50" required>
 
     <label for="email">Email</label>
     <input id="email" name="email" type="email" required>
 
     <label for="telefono">Teléfono</label>
-    <input id="telefono" name="telefono" type="tel" placeholder="+34 600 000 000" required>
+    <input id="telefono" name="telefono" type="tel" placeholder="612345678" required>
 
     <label for="password">Contraseña</label>
     <input id="password" name="password" type="password" required>
@@ -61,7 +63,7 @@
             <input type="checkbox" name="remember">
             <span>Recordarme</span>
         </label>
-        <a href="#" class="momo-link-small">¿Olvidaste la contraseña?</a>
+        <a href="#" id="olvido-pass" class="momo-link-small">¿Olvidaste la contraseña?</a>
     </div>
 
     <button type="submit" class="momo-submit">ENTRAR</button>
@@ -110,6 +112,57 @@
             </div>
         </div>
     </footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const form = document.getElementById("registro-form");
+    const linkOlvido = document.getElementById("olvido-pass");
+
+    if (linkOlvido) {
+        linkOlvido.addEventListener("click", e => {
+            e.preventDefault();
+            alert("...pues haberla apuntado");
+        });
+    }
+
+if (form) {
+    form.addEventListener("submit", e => {
+
+        const nombre = document.getElementById("nombre").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const telefono = document.getElementById("telefono").value.trim();
+        const password = document.getElementById("password").value.trim();
+
+        if (nombre.length === 0 || nombre.length > 50) {
+            alert("El nombre debe tener entre 1 y 50 caracteres.");
+            return;
+        }
+
+        if (!email.includes("@") || !email.includes(".")) {
+            alert("Introduce un email válido.");
+            return;
+        }
+
+        const regexTelefono = /^[0-9]{9}$/;
+        if (!regexTelefono.test(telefono)) {
+            alert("El teléfono debe tener exactamente 9 dígitos.");
+            return;
+        }
+
+        if (!password) {
+            alert("La contraseña no puede estar vacía.");
+            return;
+        }
+
+        // 👉 Aquí está el cambio FINAL:
+        window.location.href = "creditos.html";
+
+    });
+}
+
+
+});
+</script>
 
     <script src="JavaScripts/script.js"></script>
 </body>

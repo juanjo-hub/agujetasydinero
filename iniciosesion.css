@@ -2,12 +2,11 @@
     width: 100%;
     max-width: 420px;
     margin: 120px auto 40px;
-    padding: 0 20px;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 /* Logo superior */
 .logo-brand {
     margin-bottom: 20px;
@@ -18,9 +17,7 @@
     filter: drop-shadow(0 0 8px rgba(255,255,255,0.25));
 }
 
-/* ============================================
-   TARJETA DEL FORMULARIO
-============================================ */
+/*TARJETA DEL FORMULARIO*/
 
 .momo-card {
     background: #111;
@@ -39,9 +36,8 @@
     color: #ffffff;
 }
 
-/* ============================================
-   FORMULARIO
-============================================ */
+/* 
+   FORMULARIO */
 
 .momo-form {
     display: flex;
@@ -55,7 +51,6 @@
 }
 
 .momo-form input {
-    width: 100%;
     padding: 12px 14px;
     background: #1a1a1a;
     border: 1px solid #333;
@@ -149,11 +144,12 @@
 ============================================ */
 
 @media (max-width: 480px) {
-    .momo-card {
-        padding: 25px 20px;
+.momo-card {
+   
+        display: contents;
     }
 
     .momo-title {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 }
