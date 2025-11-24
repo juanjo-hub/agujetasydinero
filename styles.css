@@ -166,7 +166,6 @@ main{ padding-top: 80px;}
   color: #ffffff;
   clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
   padding: 5rem;
-  height: 400px;
 }
 
 .div1_5 > h1{ color: #ffffff; font-size: 4.2rem; text-align: center;padding-top: 2rem; margin: 0;}
@@ -717,5 +716,6 @@ footer {
         text-align: center;
     }
 }
+
 
 
