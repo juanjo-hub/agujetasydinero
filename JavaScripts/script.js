@@ -339,3 +339,44 @@ window.addEventListener("load", () => {
     loader.style.display = "none";
   }, 300);
 });
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    // 1) Verificar que estamos en index.html (GitHub Pages incluido)
+    const url = window.location.pathname;
+
+    const esIndex =
+        url.endsWith("index.html") ||
+        url === "/" ||
+        url === "/agujetasydinero/" ||
+        url === "/agujetasydinero/index.html";
+
+    if (!esIndex) return;  // Si no es index, NO hace nada
+
+    // 2) Verificar que el div existe
+    const btn = document.getElementById('btn-calcular');
+    const pesoInput = document.getElementById('peso');
+    const repsInput = document.getElementById('reps');
+    const salida = document.getElementById('rm-resultado');
+
+    if (!btn || !pesoInput || !repsInput || !salida) return;
+
+    // 3) Activar el cálculo solo en index
+    btn.addEventListener('click', () => {
+        const peso = parseFloat(pesoInput.value);
+        const reps = parseInt(repsInput.value);
+
+        if (!peso || !reps || reps < 1 || reps > 10) {
+            salida.textContent = "Introduce valores válidos.";
+            return;
+        }
+
+        const rm = peso * (1 + reps / 30);
+        salida.textContent = "Tu 1RM aproximado es: " + rm.toFixed(1) + " kg";
+    });
+});
