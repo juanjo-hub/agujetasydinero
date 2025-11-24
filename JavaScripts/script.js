@@ -80,17 +80,20 @@ function ordenarPorPrecio(tipoOrden) {
 SCRIPT CARRUSEL URL: PLANES
 */
 document.addEventListener("DOMContentLoaded", () => {
-  const slides = document.querySelectorAll('.slide');
-  const prevBtn = document.getElementById('prev');
-  const nextBtn = document.getElementById('next');
-  let index = 0;
+  const slides = document.querySelectorAll('.slide');
+  const prevBtn = document.getElementById('prev');
+  const nextBtn = document.getElementById('next');
 
-  function showSlide(i) {
-    slides.forEach(slide => slide.classList.remove('active'));
-    slides[i].classList.add('active');
-  }
+  if (slides.length === 0) return; // ← AQUÍ ESTÁ LA SOLUCIÓN
 
-  showSlide(index);
+  let index = 0;
+
+  function showSlide(i) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[i].classList.add('active');
+  }
+
+  showSlide(index);
 
   if (nextBtn && prevBtn) {
     nextBtn.addEventListener('click', () => {
@@ -336,3 +339,4 @@ window.addEventListener("load", () => {
     loader.style.display = "none";
   }, 300);
 });
+
