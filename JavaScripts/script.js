@@ -1,12 +1,4 @@
-/*
-=========================================================
-  SECCIONES SUPERIORES
-=========================================================
-*/
-
-/*
-PAUSA BOTÓN VIDEO - DIV1
-*/
+/*PAUSA BOTÓN VIDEO - DIV1*/
 const video = document.getElementById('bgVideo');
 const pauseButton = document.getElementById('pauseButton');
 
@@ -21,7 +13,6 @@ if (video && pauseButton) {
     }
   });
 }
-
 /*
 SECCIÓN PREGUNTAS - DIV5
 */
@@ -32,11 +23,8 @@ const botonesPregunta = document.querySelectorAll(".btn-pregunta");
       pregunta.classList.toggle("activa");
     });
   });
-
-
 /*
-ASIDE: URL TIENDA - FILTROS Y ORDEN
-*/
+ASIDE: URL TIENDA - FILTROS Y ORDEN*/
 function btnFiltro() {
   const tipoSeleccionado = document.getElementById('tipo').value;
   const contenedor = document.querySelector('.productos-grid');
@@ -137,14 +125,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-/*
-=========================================================
-  LÓGICA DEL CARRITO (CONSOLIDADA)
-=========================================================
-*/
-
+/*LÓGICA DEL CARRITO (CONSOLIDADA)*/
 // --- 1. Funciones de Almacenamiento y Contador ---
-
 function obtenerCarrito() {
   return JSON.parse(localStorage.getItem('carrito')) || {};
 }
@@ -152,7 +134,6 @@ function obtenerCarrito() {
 function guardarCarrito(carrito) {
   localStorage.setItem('carrito', JSON.stringify(carrito));
 }
-
 // Actualiza SOLO el contador del header
 function actualizarContadorHeader() {
   const cantidadCarritoElement = document.getElementById('cantidad-carrito');
@@ -328,13 +309,7 @@ if (divProductosCarrito) {
     });
 
 }
-
-
-
-
-/*
-MENÚ HAMBURGUESA HEADER
-*/
+/*MENÚ HAMBURGUESA HEADER*/
 document.addEventListener('DOMContentLoaded', () => {
   const nav = document.querySelector('header nav.main-nav');
   const toggle = document.querySelector('.nav-toggle');
@@ -351,3 +326,13 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+  if (!loader) return;
+
+  loader.style.opacity = "0";
+
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 300);
+});
