@@ -340,3 +340,12 @@ window.addEventListener("load", () => {
   }, 300);
 });
 
+
+/*EL EQUIPO*/
+<script>
+document.querySelectorAll('.card-persona').forEach(card => {
+    card.addEventListener('click', () => {
+        card.classList.toggle('flip');
+    });
+});
+</script>
