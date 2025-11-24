@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intro Star Wars</title>
+
+<style>
+    body {
+        margin: 0;
+        overflow: hidden;
+        background: black;
+        perspective: 400px;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Fondo estrellado */
+    .stars {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: url('https://i.imgur.com/k5Ztkf3.png') repeat;
+        animation: starScroll 200s linear infinite;
+        z-index: 0;
+    }
+
+    @keyframes starScroll {
+        from { transform: translateY(0); }
+        to { transform: translateY(-2000px); }
+    }
+
+    /* Contenedor del texto */
+    .crawl-container {
+        position: absolute;
+        bottom: -100px;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    /* Texto animado */
+    .crawl {
+        width: 70%;
+        max-width: 600px;
+        color: #ffe81f;
+        text-align: justify;
+        font-size: 2rem;
+        line-height: 2.5rem;
+
+        /* Perspectiva y animación */
+        transform-origin: 30% 100%;
+        animation: crawl 120s linear infinite;
+    }
+
+    @keyframes crawl {
+        0% {
+            transform: rotateX(20deg) translateY(100vh);
+        }
+        100% {
+            transform: rotateX(25deg) translateY(-250vh);
+        }
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    .logo {
+        text-align: center;
+        margin-top: 20px;
+        animation: fadein 500s ease-out forwards;
+        opacity: 0;
+    }
+
+    @keyframes fadein {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<div class="crawl-container">
+    <div class="crawl">
+
+        <h1>EPISODIO FINAL</h1><br>
+        <h2>UN POCO MÁS VERDE</h2>
+
+        <p>
+        No hay caminos fáciles, cada uno de nosotros teníamos un propósito, unos ideales y una manera de cumplirlos.
+        El camino llegó a su fin, y salvo las diferencias de cada uno, el sentir final creo que es común, cómo ha molado esto...
+        El 2026 me lo llevaré conmigo siempre. Sentir que fue una experiencia maravillosa pese a sus sombras es algo que hasta me emociona,
+        Y ha sido gracias a vosotr@s, tú también María, ha servido de hilo conductor para que esto fuese lo mejor posible, justo lo que hicimos el primer día.
+        Sentimentalismo llaman a esto, pues sí, cuando algo gusta tanto, cuesta verlo terminar.
+        Los que se quedan en la empresa, bravo, vuestro esfuerzo mereció la pena. Los que no, se nos cierra una puerta, pero se abre una ventana, no paremos de insistir.
+        Gracias Jose, la del frigorífico a última hora no lo olvidaremos nunca, y la plantar una sonrisa cada día de formación tampoco.
+        Gracias a cada uno de vosotros. 
+        <br><br><br><br>
+
+    <h2>Producción Principal</h2>
+    <p><strong>Productor Ejecutivo:</strong> Jose “El Dueño”</p>
+    <p><strong>Directora:</strong> María “Psicóloga”</p>
+
+    <hr style="margin:2rem 0; opacity:0.3;">
+
+    <h2>Equipo Técnico</h2>
+
+    <ul style="list-style:none; padding:0; line-height:1.8; font-size:2rem;">
+
+        <li><strong>Jesús “Linux man”</strong></li>
+        <li><strong>Santi “Una tostada 0,0?”</strong></li>
+        <li><strong>Silvia “Pixel Perfect”</strong></li>
+        <li><strong>Jesús “Sabe mucho”</strong></li>
+        <li><strong>Vanessa “La silenciosa”</strong></li>
+        <li><strong>Carlos “Vladimir el albañil”</strong></li>
+        <li><strong>Rosa “Más calle que ningun@”</strong></li>
+        <li><strong>Patricia “Síndrome de vida ocupada”</strong></li>
+        <li><strong>Ángel “El sabio”</strong></li>
+        <li><strong>Alba “La historiadora de vivencias”</strong></li>
+        <li><strong>Adrián “”</strong></li>
+        <li><strong>Gema “Metalera”</strong></li>
+        <li><strong>María “Tú puta madre...”</strong></li>
+        <li><strong>Yara “Vuela Alto”</strong></li>
+        <li><strong>Joel “El desertor”</strong></li>
+    </ul>
+
+
+         
+    </div>
+</div>
+
+</body>
+</html>
