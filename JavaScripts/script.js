@@ -342,10 +342,14 @@ window.addEventListener("load", () => {
 
 
 /*EL EQUIPO*/
-<script>
-document.querySelectorAll('.card-persona').forEach(card => {
-    card.addEventListener('click', () => {
-        card.classList.toggle('flip');
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.card-persona');
+    if (!cards.length) return; // Si no hay tarjetas, no hace nada
+
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            card.classList.toggle('flip');
+        });
     });
 });
-</script>
+
