@@ -1,0 +1,159 @@
+.momo-login-wrapper {
+    width: 100%;
+    max-width: 420px;
+    margin: 120px auto 40px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo superior */
+.logo-brand {
+    margin-bottom: 20px;
+}
+
+#logo-sesion {
+    width: 130px;
+    filter: drop-shadow(0 0 8px rgba(255,255,255,0.25));
+}
+
+/* ============================================
+   TARJETA DEL FORMULARIO
+============================================ */
+
+.momo-card {
+    background: #111;
+    width: 100%;
+    padding: 32px 28px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 0, 80, 0.18);
+    border: 1px solid #1c1c1c;
+}
+
+.momo-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* ============================================
+   FORMULARIO
+============================================ */
+
+.momo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.momo-form label {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+}
+
+.momo-form input {
+    width: 100%;
+    padding: 12px 14px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+.momo-form input:focus {
+    border-color: #b41271;
+}
+
+/* Recordarme / recuperar pass */
+.momo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.momo-remember {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.momo-remember input {
+    transform: scale(1.1);
+}
+
+.momo-link-small {
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: #b41271;
+}
+
+.momo-link-small:hover {
+    text-decoration: underline;
+}
+
+/* Botón enviar */
+.momo-submit {
+    margin-top: 10px;
+    padding: 13px;
+    background: #b41271;
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.momo-submit:hover {
+    background: #8c0e5a;
+}
+
+/* Registro alternativo */
+.momo-create {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.momo-create span {
+    margin-right: 6px;
+}
+
+/* ============================================
+   FOOTER (solo ajustes para esta página)
+============================================ */
+
+#footer-iniciosesion {
+    margin-top: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #000;
+}
+
+#footer-iniciosesion .footer-left p,
+#footer-iniciosesion .footer-col h3,
+#footer-iniciosesion .footer-col ul li a {
+    color: #e1e1e1;
+}
+
+/* ============================================
+   RESPONSIVE
+============================================ */
+
+@media (max-width: 480px) {
+    .momo-card {
+        padding: 25px 20px;
+    }
+
+    .momo-title {
+        font-size: 1.6rem;
+    }
+}
