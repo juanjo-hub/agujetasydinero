@@ -339,17 +339,3 @@ window.addEventListener("load", () => {
     loader.style.display = "none";
   }, 300);
 });
-
-
-/*EL EQUIPO*/
-document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.card-persona');
-    if (!cards.length) return; // Si no hay tarjetas, no hace nada
-
-    cards.forEach(card => {
-        card.addEventListener('click', () => {
-            card.classList.toggle('flip');
-        });
-    });
-});
-
