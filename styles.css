@@ -13,12 +13,10 @@
     z-index: 9999;
     transition: opacity 0.3s ease;
 }
-
 #loader img {
     width: 120px;
     height: auto;
 }
-
 html, body{
     font-family: "Montserrat", sans-serif;
     width: 100vw;
@@ -27,7 +25,6 @@ html, body{
     padding: 0;
     margin: 0;
   }
-
 /* Contenedor */
 #aviso-header{
   padding: 2px;
@@ -40,9 +37,7 @@ html, body{
   white-space: nowrap;
   text-align: center;
 }
-
 .ticker-group span {margin:0 1rem}
-
 header{
     background: #c0c0c0;   
     position: fixed;
@@ -50,31 +45,26 @@ header{
     z-index: 3;
     top: -1px;
 }
-
 #logo{
     width: 120px;
     height: 100px;
 }
-
 #membresia{
     padding: 0.8rem;
     text-decoration: none;
     color: #fff;
     font-weight: 700;
 }
-
 #membresia:hover{
     color: #000;
     background: #fff;
 }
-
 nav {
     display: flex;              
     align-items: center;        
     justify-content: space-evenly; 
     background-color: #000;
 }
-
 nav .a-nav {
     text-decoration: none;
     color: #fff;
@@ -99,8 +89,6 @@ main{ padding-top: 80px;}
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
     overflow: hidden;
 }
-
-/* Video de fondo */
 .background-video {
     position: absolute;
     width: 100%;
@@ -109,15 +97,11 @@ main{ padding-top: 80px;}
     z-index: -1; 
     padding: 2rem;
   }
-
-/* Texto */
 .h2-div1 {
     color: white;
     font-size: 3rem;
     z-index: 1;
 }
-
-/* Botón */
 .btn-div , .btn-div-h1 {
     margin:3rem 0;
     padding: 1rem 2rem;
@@ -130,13 +114,11 @@ main{ padding-top: 80px;}
     z-index: 1;
     transition: background-color 0.3s;
 }
-
 .btn-div:hover, .btn-div-h1:hover {
     color: #b41271;
     background: #000000;
     box-shadow: 0 10px 20px rgba(0,0,0,0.5); 
 }
-
 .btn-pause {
     position: absolute;
     bottom: 1rem;
@@ -186,7 +168,6 @@ main{ padding-top: 80px;}
   justify-content: space-between;
   gap: 1rem;
 }
-
 .plan {
     background: #222;
     flex: 1;
@@ -198,7 +179,6 @@ main{ padding-top: 80px;}
     gap: 1rem;
     margin: 0.5rem;
 }
-
 .plan .image {
   width: 100%;
   height: 200px;
@@ -210,11 +190,9 @@ main{ padding-top: 80px;}
   box-shadow: 0 4px 8px rgba(0,0,0,0.7);
   border-radius: 5px;
 }
-
 .plan .image:hover{
     transform: rotate(0);
 }
-
 .plan-noob .image {
   background-image: url('Imagenes/Inicio/noob.webp');
 }
@@ -279,8 +257,6 @@ main{ padding-top: 80px;}
     letter-spacing: 2px;
     color: #000000;
 }
-
-/*DIV4*/
 .div4 {
   display: flex;
   flex-direction: column; 
@@ -289,12 +265,10 @@ main{ padding-top: 80px;}
   gap: 20px;
   padding: 2rem;
 }
-
 .div4 article {
   display: inline-block;
   margin: 10px;
 }
-
 .div4 {
   flex-wrap: wrap;
 }
@@ -304,7 +278,6 @@ h2#h2-div4{
   padding: 2rem;
   letter-spacing: 2px;
 }
-
 .producto-img {
   width: 200px;
   height: 200px;
@@ -364,12 +337,10 @@ h2#h2-div4{
   justify-content: space-between;
   align-items: center;
 }
-
 .btn-pregunta:hover {
   color: #000000;
   background: #d4d3cf;
 }
-
 .respuesta {
   max-height: 0;
   overflow: hidden;
@@ -378,7 +349,6 @@ h2#h2-div4{
   background: rgba(255, 255, 255, 0.7); 
   padding: 0 1rem;
 }
-
 .pregunta.activa .respuesta {
   max-height: 300px; 
   padding: 10px;
@@ -389,19 +359,15 @@ h2#h2-div4{
   font-weight: bold;
   transition: transform 0.3s;
 }
-
 .pregunta.activa .btn-pregunta::after {
   content: '−';
 }
-
-/*FOOTER*/
 footer {
     background-color: #000000;
     color: #fff;
     padding: 0;
     display: block;
 }
-
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -410,13 +376,11 @@ footer {
     gap: 1rem;
     padding: 1rem;
 }
-
 .footer-left {
     flex: 1;
     justify-content: center;
     padding-left: 5rem;
 }
-
 .footer-logo {
     width: 120px;
     margin-bottom: 10px;
@@ -431,7 +395,6 @@ footer {
     justify-content: center;
     text-align: center;
 }
-
 .footer-right {
     display: flex;
     gap: 2rem;
@@ -440,21 +403,17 @@ footer {
     flex-wrap: wrap;
     height: 50%;
 }
-
 .footer-col h3 {
     margin-bottom: 1rem;
     color: #fff;
 }
-
 .footer-col ul {
     list-style: none;
     padding: 0;
 }
-
 .footer-col ul li {
     margin-bottom: 1rem;
 }
-
 .footer-col ul li a {
     color: #ccc;
     text-decoration: none;
@@ -487,7 +446,6 @@ footer {
 .footer-social a:hover {
   color: #e1306c; /* color típico Instagram o TikTok */
 }
-
 .carrito-btn {
     background-color: #ffffff;
     padding: 10px 15px;
@@ -497,11 +455,9 @@ footer {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
 .carrito-btn:hover {
     background-color: #b41271;
 }
-
 #cantidad-carrito {
     background: #b41271;
     border: 1px solid #000;
@@ -513,20 +469,16 @@ footer {
     justify-content: center;    
 }
 /* ---------- MENÚ HAMBURGUESA ---------- */
-/* Estructura base */
 .main-nav {
     position: relative;
     padding: 0.5rem 1rem;
 }
-
 .nav-links {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     gap: 0.5rem;
 }
-
-/* Botón hamburguesa (oculto por defecto en escritorio) */
 .nav-toggle {
     display: none;
     background: transparent;
@@ -534,35 +486,19 @@ footer {
     cursor: pointer;
     padding: 0.25rem;
 }
-
-/* Las 3 rayas del botón */
-.nav-toggle span {
-    display: block;
-    width: 24px;
-    height: 2px;
-    margin: 4px 0;
-    background: #fff;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
 /* --------- Vista móvil (≤ 600px) --------- */
 @media (max-width: 600px) {
     .main-nav {
         justify-content: space-between;
     }
-
     #logo {
         max-width: 100px;
         height: auto;
     }
-
-    /* Mostrar botón hamburguesa */
     .nav-toggle {
         display: block;
         z-index: 1001;
     }
-
-    /* Menú oculto por defecto en móvil */
     .nav-links {
         position: absolute;
         top: 100%;
@@ -583,14 +519,12 @@ footer {
         max-height: 500px; /* valor suficiente para que entren todos los enlaces */
         padding: 0.5rem 1rem;
     }
-
     .nav-links .a-nav,
     #membresia {
         width: 100%;
         display: block;
         padding: 0.75rem 0;
     }
-
     #carrito {
         display: inline-block;
         padding: 0;
@@ -598,7 +532,6 @@ footer {
     }
 }
 
-/* Opcional: animación hamburguesa a "X" cuando se abre */
 @media (max-width: 600px) {
     .main-nav.open .nav-toggle span:nth-child(1) {
         transform: translateY(6px) rotate(45deg);
@@ -607,7 +540,6 @@ footer {
     .main-nav.open .nav-toggle span:nth-child(2) {
         opacity: 0;
     }
-
     .main-nav.open .nav-toggle span:nth-child(3) {
         transform: translateY(-6px) rotate(-45deg);
     }
@@ -620,7 +552,6 @@ footer {
     padding: 0rem 2rem;
     margin: 0;
 }
-
 #membresia {
     text-decoration: none;
     color: #b41271;
@@ -637,13 +568,11 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
 .nav-toggle .icon-menu {
     width: 30px;
     height: 30px;
     display: block;
 }
-
 @media (max-width: 499px) {
     .div1_5 > h1{font-size: 2rem;}
     .div1_5{display:flow; height: 600px;}
@@ -655,13 +584,10 @@ footer {
         font-size: 1.5rem;
         letter-spacing: 2px;
     }
-
     .btn-div{font-size: 1.1rem; padding: 0.6rem 0.8rem;}
-
     .dentro-div2 {
         flex-direction: column-reverse;
     }
-
     .producto-img{
         width: 150px;
         height: 150px;
@@ -669,7 +595,6 @@ footer {
     }
 
 } 
-
 /* FOOTER movil */
 @media (max-width: 499px) {
     .footer-container {
@@ -681,7 +606,6 @@ footer {
         text-align: center;
         padding: 1rem;
     }
-
     .footer-left {
         width: 100%;
         display: flex;
@@ -690,7 +614,6 @@ footer {
         text-align: center;
         padding-left: 0;
     }
-
     .footer-right {
         width: 100%;
         display: flex;
@@ -718,14 +641,12 @@ footer {
     box-shadow: 0 0 30px rgba(0,0,0,0.6);
     text-align: center;
 }
-
 #calc-rm h2 {
     color: #fff;
     font-size: 2rem;
     margin-bottom: 1.5rem;
     letter-spacing: 2px;
 }
-
 .rm-form {
     display: flex;
     justify-content: center;
@@ -733,20 +654,17 @@ footer {
     gap: 2rem;
     flex-wrap: wrap;
 }
-
 .rm-inputs {
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
 }
-
 .rm-inputs label {
     color: #b41271;
     font-weight: 600;
     font-size: 0.9rem;
     text-align: left;
 }
-
 .rm-inputs input {
     padding: 0.8rem 1rem;
     width: 180px;
@@ -756,11 +674,9 @@ footer {
     color: #fff;
     font-size: 1rem;
 }
-
 .rm-inputs input::placeholder {
     color: #777;
 }
-
 #btn-calcular {
     padding: 0.9rem 2rem;
     background: #000;
@@ -789,27 +705,22 @@ footer {
     margin-bottom: 1rem;
     letter-spacing: 1px;
 }
-
 #rm-resultado {
     color: #b41271;
     font-size: 1.5rem;
     font-weight: 700;
     margin-top: 1rem;
 }
-
 /* --- RESPONSIVE --- */
-
 @media (max-width: 600px) {
     #calc-rm {
         width: 80vw;
         text-align: left;
     }
-
     .rm-form {
         flex-direction: column;
         gap: 1.5rem;
     }
-
     #btn-calcular {
         width: 50%;
     }
