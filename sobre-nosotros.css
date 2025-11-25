@@ -74,15 +74,13 @@
 /* -------------------------------------------------------------------------- */
 /* SECCIÓN DEL EQUIPO (FLIP CARDS)                                            */
 /* -------------------------------------------------------------------------- */
-
 .art-sobrenosotros {
-    grid-column: 1 / -1;
-    display: flex;
-    flex-wrap: nowrap;        /* PC → UNA FILA */
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    margin-top: 40px;
+  grid-column: 1 / -1; /* Ocupa todo el ancho en un grid */
+  display: flex;        /* O flex según tu diseño */
+  justify-content: center;
+  gap: 40px;            /* Si usas flex y quieres separación */
+  margin-top: 40px;
+  flex-wrap: wrap;
 }
 
 .art-sobrenosotros h2 {
@@ -175,3 +173,4 @@
         height: 260px;
     }
 }
+
