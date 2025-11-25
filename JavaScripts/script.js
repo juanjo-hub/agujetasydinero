@@ -340,13 +340,7 @@ window.addEventListener("load", () => {
   }, 300);
 });
 
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
-
     // 1) Verificar que estamos en index.html (GitHub Pages incluido)
     const url = window.location.pathname;
 
@@ -357,7 +351,6 @@ document.addEventListener('DOMContentLoaded', () => {
         url === "/agujetasydinero/index.html";
 
     if (!esIndex) return;  // Si no es index, NO hace nada
-
     // 2) Verificar que el div existe
     const btn = document.getElementById('btn-calcular');
     const pesoInput = document.getElementById('peso');
@@ -378,5 +371,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const rm = peso * (1 + reps / 30);
         salida.textContent = "Tu 1RM aproximado es: " + rm.toFixed(1) + " kg";
+    });
+});
+
+/* FLIP CARDS: SOLO SI EXISTEN TARJETAS DEL EQUIPO */
+document.addEventListener('DOMContentLoaded', () => {
+    const tarjetas = document.querySelectorAll('.card-persona');
+
+    if (tarjetas.length === 0) return; // ← Si no hay tarjetas, NO hace nada
+
+    tarjetas.forEach(card => {
+        card.addEventListener('click', () => {
+            card.classList.toggle('flip');
+        });
     });
 });
