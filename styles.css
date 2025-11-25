@@ -411,7 +411,6 @@ footer {
     flex-wrap: wrap;
     gap: 1rem;
     padding: 1rem;
-    margin: 1rem;
 }
 
 .footer-left {
@@ -829,6 +828,7 @@ footer {
         margin: auto;
     }
 }
+
 
 
 
