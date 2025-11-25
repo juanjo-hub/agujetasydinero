@@ -1,8 +1,5 @@
-/*
-URL: CARRO
-*/
+/*URL: CARRO*/
 #h1-carro{color: #fff; font-size: 3rem; text-align: center;}
-
 #carrito-layout {
     display: flex;
     justify-content: space-between;
@@ -13,7 +10,6 @@ URL: CARRO
     margin-top: 8rem;
     flex-grow: 1; 
 }
-
 #mensaje-carrito {
     text-align: center;
     border: 2px dashed #b41271; 
@@ -22,7 +18,6 @@ URL: CARRO
     width: 80%; 
     color: #b41271; 
 }
-
 #columna-productos {
     flex-grow: 1; /* Esto hace que ocupe la mayor parte del espacio libre */
     min-width: 70%; 
@@ -35,7 +30,6 @@ URL: CARRO
     margin: 0; 
     padding: 0; 
 }
-
 #precio-total {
     text-align: right;
     margin-top: 20px;
@@ -45,7 +39,6 @@ URL: CARRO
     background: #fff;
     margin: 0;
 }
-
 .div-pago {
     width: 300px;
     border-radius: 10px;
@@ -56,7 +49,6 @@ URL: CARRO
     align-items: center; 
     line-height: 1.5rem;
 }
-
 #btn-pago {
     padding: 1rem; 
     background-color: #b41271;
@@ -66,21 +58,16 @@ URL: CARRO
     cursor: pointer;
     margin: 1rem;
 }
-
 #btn-pago:hover {
     background-color: #b41271;
 }
-
 img.imagen-carrito{
     max-width: 100px;
 }
-
 div#productos-carrito{
     background: #fff;
     text-align: center;
-
 }
-
 .producto-en-carrito {
     display: flex;
     justify-content: space-between;
@@ -95,25 +82,18 @@ button.btn-cantidad.btn-mas, button.btn-cantidad.btn-menos{
     border:none;
     cursor: pointer;
 }
-
 button.btn-cantidad.btn-mas:hover, button.btn-cantidad.btn-menos:hover{
     color: #ffffff;
     background: #b41271;
     border: none;
 }
-
 .acciones {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
 }
-
-/* ================================
-   CARRITO — RESPONSIVE ≤499px
-   ================================ */
+/*CARRITO — RESPONSIVE ≤499px */
 @media (max-width: 499px) {
-
-    /* Layout general: columna */
     #carrito-layout {
         flex-direction: column;
         align-items: center;
@@ -122,21 +102,16 @@ button.btn-cantidad.btn-mas:hover, button.btn-cantidad.btn-menos:hover{
         padding: 0 1rem;
         margin-top: 6rem;
     }
-
-    /* Columna de productos ocupa todo */
     #columna-productos {
         min-width: 100%;
         width: 100%;
     }
-
     #productos-carrito {
         width: 100%;
         background: #fff;
         border-radius: 10px;
         padding: 0;
     }
-
-    /* Cada producto del carrito */
     .producto-en-carrito {
         flex-direction: column;
         align-items: center;
@@ -144,39 +119,30 @@ button.btn-cantidad.btn-mas:hover, button.btn-cantidad.btn-menos:hover{
         gap: 1rem;
         padding: 1.2rem;
     }
-
     /* Imagen más pequeña en móvil */
     .producto-en-carrito img.imagen-carrito {
         max-width: 80px;
     }
-
-    /* Acciones: + y - en horizontal */
     .acciones {
         flex-direction: row;
         justify-content: center;
         gap: 1rem;
     }
-
     button.btn-cantidad.btn-mas,
     button.btn-cantidad.btn-menos {
         padding: 0.4rem 0.8rem;
         font-size: 1.1rem;
     }
-
-    /* Texto TOTAL centrado */
     #precio-total {
         text-align: center;
         font-size: 1.3rem;
     }
-
-    /* Columna de pago */
     .div-pago {
         width: 100%;
         max-width: 350px;
         margin-top: 1rem;
         padding: 1.5rem 1rem;
     }
-
     .div-pago ul {
         padding-left: 0;
     }
