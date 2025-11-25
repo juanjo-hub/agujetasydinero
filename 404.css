@@ -1,4 +1,3 @@
-
 body {
   color: #333;
   background-color: #f8f8f8; /* color claro de fondo, ajusta al tuyo */
@@ -6,22 +5,18 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-
 .site-header {
   background-color: #000; /* por ejemplo, negro o el color de tu header */
   padding: 20px;
   display: flex;
   align-items: center;
 }
-
 .site-header .logo img {
   height: 40px;
 }
-
 .site-nav {
   margin-left: auto;
 }
-
 .site-nav a {
   color: #fff;
   text-decoration: none;
@@ -29,27 +24,22 @@ body {
   font-size: 14px;
   transition: color .3s;
 }
-
 .site-nav a:hover {
   color: #b41271; /* color de acento al pasar */
 }
-
 .error-container {
   flex: 1;
   text-align: center;
   padding: 80px 20px;
 }
-
 .error-container h1 {
   font-size: 96px;
   color: #b41271; /* color de acento */
 }
-
 .error-container p {
   font-size: 20px;
   margin: 20px 0;
 }
-
 .btn-home {
   display: inline-block;
   text-decoration: none;
@@ -60,11 +50,9 @@ body {
   border-radius: 4px;
   transition: background-color .3s;
 }
-
 .btn-home:hover {
   background-color: #b41271;
 }
-
 .site-footer {
   background-color: #000;
   color: #ccc;
