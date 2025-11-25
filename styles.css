@@ -649,9 +649,7 @@ footer {
     display: block;
 }
 
-
 @media (max-width: 499px) {
-
     .div1_5 > h1{font-size: 2rem;}
     .div1_5{display:flow; height: 600px;}
     .div1_5 > h1{padding: 0.5rem; font-size:1.5rem}
@@ -679,7 +677,6 @@ footer {
 
 /* FOOTER movil */
 @media (max-width: 499px) {
-
     .footer-container {
         flex-direction: column;
         justify-content: center;
@@ -716,12 +713,7 @@ footer {
     }
 }
 
-
-
-/* ------------------------------------------------------ */
 /* CALCULADORA 1RM (INDEX)                                */
-/* ------------------------------------------------------ */
-
 #calc-rm {
     max-width: 700px;
     margin: 4rem auto;
@@ -838,4 +830,5 @@ footer {
         margin: auto;
     }
 }
+
 
