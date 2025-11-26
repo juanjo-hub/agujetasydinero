@@ -659,7 +659,7 @@ footer {
     gap: 0.7rem;
 }
 .rm-inputs label {
-    color: #b41271;
+    color: #fff;
     font-weight: 600;
     font-size: 0.9rem;
     text-align: left;
@@ -735,4 +735,5 @@ footer {
         margin: auto;
     }
 }
+
 
