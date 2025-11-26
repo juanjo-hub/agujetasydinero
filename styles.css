@@ -419,23 +419,18 @@ footer {
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
 .footer-col ul li a:hover {
     color: #fff;
     font-style: italic;
 }
-
 .correo{
   text-decoration: none;
   color: #fff;
-    font-style: bold;
 }
-
-
+.correo:hover{color:#b41271;}
 .footer-social {
   margin: 10px 0;
 }
-
 .footer-social a {
   display: inline-block;
   margin-right: 10px;
@@ -443,7 +438,6 @@ footer {
   font-size: 24px;
   transition: 0.3s;
 }
-
 .footer-social a:hover {
   color: #e1306c; /* color típico Instagram o TikTok */
 }
@@ -736,6 +730,7 @@ footer {
         margin: auto;
     }
 }
+
 
 
 
