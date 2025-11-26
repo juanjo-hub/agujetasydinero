@@ -475,7 +475,6 @@ footer {
     display: none;
     background: transparent;
     border: none;
-    cursor: pointer;
     padding: 0.25rem;
 }
 /* --------- Vista móvil (≤ 600px) --------- */
@@ -725,6 +724,7 @@ footer {
         margin: auto;
     }
 }
+
 
 
 
