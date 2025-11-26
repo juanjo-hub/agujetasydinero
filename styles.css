@@ -427,7 +427,8 @@ footer {
 
 .correo{
   text-decoration: none;
-  color: #b41271;
+  color: #fff;
+    font-style: bold;
 }
 
 
@@ -735,5 +736,6 @@ footer {
         margin: auto;
     }
 }
+
 
 
