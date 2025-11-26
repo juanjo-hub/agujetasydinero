@@ -281,7 +281,7 @@ h2#h2-div4{
 .producto-img {
   width: 200px;
   height: 200px;
-  display: block;
+  object-fit: cover;
   border: 3px solid #fff;
   border-radius: 120px;
   padding: 0.5rem;
@@ -291,7 +291,6 @@ h2#h2-div4{
 .producto-img:hover{
     transform: scale(1.1);
 }
-
 .btn-div {
     margin-top: 20px;
     border-radius: 10px;
@@ -301,8 +300,6 @@ h2#h2-div4{
     border: 2px solid #000000;
     color: #b41271;
 }
-
-/*DIV5*/
 .div5 {
   margin: 1rem auto;
   padding: 1rem;
@@ -730,6 +727,7 @@ footer {
         margin: auto;
     }
 }
+
 
 
 
