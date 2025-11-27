@@ -481,6 +481,7 @@ footer {
 @media (max-width: 600px) {
     .main-nav {
         justify-content: space-between;
+        background:#b9217a;
     }
     #logo {
         max-width: 100px;
@@ -723,6 +724,7 @@ footer {
         margin: auto;
     }
 }
+
 
 
 
