@@ -549,7 +549,6 @@ footer {
     margin-left: 0.5rem;
 }
 .nav-toggle {
-    background: none;
     border: none;
     padding: 0;
     width: 40px;
@@ -724,6 +723,7 @@ footer {
         margin: auto;
     }
 }
+
 
 
 
